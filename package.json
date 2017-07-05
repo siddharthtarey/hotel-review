@@ -1,0 +1,15 @@
+{
+  "name": "hotel-review",
+  "version": "1.0.0",
+  "description": "hotel review system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "group 5",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "nano": "^6.3.0"
+  }
+}
