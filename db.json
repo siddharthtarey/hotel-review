@@ -1,0 +1,4 @@
+{"total_rows":2,"offset":0,"rows":[
+{"id":"1","key":"1","value":{"rev":"6-c48201e5bfbae46bba3e9c5103a747f1"},"doc":{"_id":"1","_rev":"6-c48201e5bfbae46bba3e9c5103a747f1","name":"Buffalo wild wings","description":"Everyone's favorite for chicken wings"}},
+{"id":"_design/hotellist","key":"_design/hotellist","value":{"rev":"2-56b487e7a9a9aa8b39b76c223a9f1888"},"doc":{"_id":"_design/hotellist","_rev":"2-56b487e7a9a9aa8b39b76c223a9f1888","views":{"hotellist":{"map":"function (doc) {\n  emit(doc._id, doc.name);\n}"}},"language":"javascript"}}
+]}
