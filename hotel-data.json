@@ -1,0 +1,424 @@
+{ "docs" : [{
+    "name": "Corinthia Hotel Budapest",
+    "stars": 5,
+    "description": "The 5-star Corinthia Hotel Budapest on the Grand Boulevard offers free access to its Royal Spa, 3 restaurants, an elegant café and free Wi-Fi in all rooms.\nThe UNESCO-protected Andrassy Avenue and the Oktogon metro station are only 300 metres away from the Corinthia Hotel Budapest.\nIn the newly opened Royal Spa you can enjoy several relaxation areas, saunas, steam baths, hot tubs, a fitness room, mud baths, seaweed baths and a wide variety of treatments.\nThe large guest rooms of the Corinthia Hotel Budapest are all air-conditioned and feature a flat-screen TV with satellite channels.\nGourmet Hungarian, Asian and international cuisine can be enjoyed in the restaurants and you can choose from a selection of home-made cakes in the café. Throughout the day you can listen to live piano music in the lobby bar.\n07. Erzsébetváros is a great choice for travellers interested in nightlife, culture and hot springs.",
+   
+    "rooms": [{
+        "type": "Superior Double or Twin Room",
+        "number": 20,
+        "description": "These are some great rooms",
+        
+        "price": 73000
+    }, {
+        "type": "Deluxe Double Room",
+        "number": 50,
+        "description": "These are amazing rooms",
+        
+        "price": 92000
+    }, {
+        "type": "Executive Double Room",
+        "number": 25,
+        "description": "These are amazing rooms",
+        
+        "price": 112000
+    }, {
+        "type": "Deluxe Residence",
+        "number": 15,
+        "description": "Excellent for three people",
+        
+        "price": 120000
+    }],
+    "location": {
+        "address": "1073 Budapest, Erzsébet körút 43-49., Hungary",
+        "coordinates": [
+            47.502649,
+            19.066785
+        ]
+    },
+    "Reviews": [{"Ratings": {"Service": "4", "Cleanliness": "5", "Overall": "5.0", "Value": "4", "Sleep Quality": "4", "Rooms": "5", "Location": "5"}, "AuthorLocation": "Boston", "Title": "\u201cExcellent Hotel & Location\u201d", "Author": "gowharr32", "ReviewID": "UR126946257", "Content": "We enjoyed the Best Western Pioneer Square. My husband and I had a room with a king bed and it was clean, quiet, and attractive. Our sons were in a room with twin beds. Their room was in the corner on the main street and they said it was a little noisier and the neon light shone in. But later hotels on the trip made them appreciate this one more. We loved the old wood center staircase. Breakfast was included and everyone was happy with waffles, toast, cereal, and an egg meal. Location was great. We could walk to shops and restaurants as well as transportation. Pike Market was a reasonable walk. We enjoyed the nearby Gold Rush Museum. Very, very happy with our stay. Staff was helpful and knowledgeable.", "Date": "March 29, 2012"}, {"Ratings": {"Overall": "5.0"}, "AuthorLocation": "Madison, Wisconsin", "Title": "\u201cGreat Visit to Seattle!\u201d", "Author": "Nancy W", "ReviewID": "UR126795011", "Content": "Great visit to Seattle thanks to our stay at the Best Western Pioneer Square! The hotel was reasonably priced and close to everything we wanted to see - ferry ride, Underground Tour, Klondike Museum, short walk to Pike Market and other shopping. The staff was amazingly helpful and accommodating. Our room was very clean and had everything we needed. Breakfast was plentiful and very good. Before we booked, I read about some potential issues with the area. I can honestly say that the area was just fine! In fact, if you enjoy historic and quaint parts of town, this is definitely where you want to stay. I will be recommending this hotel to anyone who is headed to Seattle.", "Date": "March 27, 2012"}, {"Ratings": {"Service": "5", "Cleanliness": "5", "Overall": "5.0", "Value": "5", "Sleep Quality": "5", "Rooms": "5", "Location": "5"}, "AuthorLocation": "Ketchikan, Alaska", "Title": "\u201cExcellent in Everyway\u201d", "Author": "Janet H", "ReviewID": "UR126715331", "Content": "Great Location,short walk from Amtrak station, Link or to a game. Price perfect for downtown Seattle. Historic Building, clean and comfortable. Breakfast was good. Staff friendly and helpful. The family is already thinking of the next stay. Super Cool Toy store across the street for all ages.", "Date": "March 27, 2012"}, {"Ratings": {"Service": "5", "Cleanliness": "5", "Overall": "5.0", "Value": "5", "Sleep Quality": "4", "Rooms": "4", "Location": "5"}, "AuthorLocation": "Florida", "Title": "\u201cGreat hotel, location & price.\u201d", "Author": "TimothyFlorida", "ReviewID": "UR126585393", "Content": "Accommodation in Seattle can be expensive. This hotel is very reasonably priced, located just off Pioneer Square, close to shops and restaurants and public transport (light rail). It appears to have recently been completely renovated in a period theme. Rooms are small but well equipped comfortable and clean - reminds me a little of a European style hotel. Staff are polite and helpful - in a genuine way. It is suitable for all types of stays business to a romantic getaway. Next time your in Seattle stay here!", "Date": "March 24, 2012"}],
+    "services": [
+        "Room service",
+        "Airport shuttle (surcharge)",
+        "24-hour front desk",
+        "Currency exchange",
+        "Tour desk",
+        "Ticket service",
+        "Luggage storage",
+        "Concierge service",
+        "Laundry",
+        "Dry cleaning",
+        "Ironing service",
+        "Meeting/banquet facilities",
+        "Business centre",
+        "Fax/photocopying",
+        "Barber/beauty shop",
+        "Gift shop"
+    ]
+}, {
+    "name": "Grand Hotel Palatino",
+    "stars": 4,
+    "description": "Just a 5-minute walk from the Coliseum and 100 metres from Cavour Metro, Grand Hotel Palatino is in Rome's Monti District. It offers an American bar and 2 restaurants. Wi-Fi is free throughout. Rooms at the Grand Hotel are air conditioned and come with a minibar and satellite TV. Some have views of Rome’s rooftops.\nLe Erbe restaurant offers international cuisine in elegant surroundings, while Le Spighe specialises in Roman dishes and classic Italian cooking. Breakfast starts at 06:30.\nThe Forum and the Parco di Traiano are both less than a 10-minute walk from the hotel. Termini Train Station is one metro stop away, as is Esquilino with its markets and many ethnic restaurants.\nRione Monti is a great choice for travellers interested in sightseeing, food and monuments.",
+    
+    "rooms": [{
+        "type": "Standard Plus Double Room",
+        "number": 10,
+        "description": "These are small rooms",
+        "price": 312.5
+    }, {
+        "type": "Executive Double Room",
+        "number": 25,
+        "description": "These are double rooms",
+        "price": 322.5
+    }, {
+        "type": "Superior Double Room",
+        "number": 3,
+        "description": "Amazing suites",
+        "price": 352.5
+    }, {
+        "type": "Standard Plus Triple Room",
+        "number": 13,
+        "description": "Amazing suites",
+        "price": 452.5
+    }, {
+        "type": "Junior Suite",
+        "number": 13,
+        "description": "Very exclusive suites",
+        "price": 1400
+    }],
+    "location": {
+        "address": "Via Cavour 213, Rione Monti, 00184 Rome, Italy",
+        "coordinates": [41.894493, 12.492259]
+    },
+    "Reviews": [{"Ratings": {"Service": "5", "Cleanliness": "5", "Overall": "5.0", "Value": "5", "Sleep Quality": "5", "Rooms": "5", "Location": "5"}, "AuthorLocation": "Albany, Oregon", "Title": "\u201cSeattle\u201d", "Author": "Sharon B", "ReviewID": "UR126815874", "Content": "This past fall I went with a friend to Seattle. We stayed at the Best Western Loyal Inn and we enjoyed our stay. The front desk was very helpful and when you call with a request there was follow through. The room was clean and fresh smelling. The breakfast was good too. I would return again. Walking distance to the Space Needle and sights close by.", "Date": "March 28, 2012"}, {"Ratings": {"Service": "5", "Cleanliness": "5", "Overall": "5.0", "Value": "5", "Sleep Quality": "5", "Rooms": "5", "Location": "5"}, "AuthorLocation": "Santa Rosa", "Title": "\u201cHad everything we needed!\u201d", "Author": "Linda B", "ReviewID": "UR126659040", "Content": "Central location, breakfast every morning, clean rooms, comfy beds and VERY friendly, helpful and pleasant staff that greeted you with a ready smile. Samantha at the front desk was particularly wonderful and every restaurant she suggested was perfect, hitting the right notes of casual, nearby and yummy! We were there to visit several colleges. Samantha was fabulous and chatting with her was a delight. Would not hesitate to stay here again.", "Date": "March 25, 2012"}, {"Ratings": {"Service": "4", "Cleanliness": "4", "Overall": "3.0", "Value": "4", "Sleep Quality": "3", "Rooms": "3", "Location": "4"}, "AuthorLocation": "Surrey, England", "Title": "\u201cGood location, large and clean rooms\u201d", "Author": "slw2610", "ReviewID": "UR126009973", "Content": "Stayed at this hotel for 1 night having searched online for mid range centrally located accommodation. Location was just a 10 mins stroll into Downtown and the main shopping areas, we walked back in the evening and the surrounding areas appeared quiet and safe. The room was large (we had lots of luggage) and it was simple to park up in the attached lot (small fee per day). The room was clean and bathroom of a mid-range standard. Good size bed, TV and coffee making facilities make this hotel a good choice for the average price within moments of down town.", "Date": "March 12, 2012"}],
+    "services": ["Room service", "Airport shuttle (surcharge)", "24-hour front desk", "Currency exchange", "Tour desk", "Luggage storage", "Concierge service", "Laundry", "Dry cleaning", "Ironing service", "Meeting/banquet facilities", "Business centre", "VIP room facilities"]
+}, {
+    "name": "Hotel Dann Carlton Belfort Medellin",
+    "stars": 5,
+    "description": "Boasting a panoramic hot tub and a swimming pool surrounded with vegetation and sun loungers, this stylish hotel offers gym facilities and free Wi-Fi. Massage sessions are available.\nHotel Dann Carlton Belfort Medellin is set in a residential area 15 blocks from El Poblado Subway station and 2.7 km from Pies Descalzos Park. Car rental can be arranged.\nAir-conditioned rooms are styled with carpeted floors, draped curtains and elegant wooden furniture. They have flat-screen cable TVs and bathrooms with baths. The suite features a dining area and the junior suites offers views of Medellin.\nA full buffet breakfast with fruits, juices and chocolate is served daily. Guests can enjoy Italian cuisine at Orvietto Restaurant.\nJose Maria Cordoba International Airport is a 45-minute drive. On-site parking is free.\nEl Poblado is a great choice for travellers interested in nightlife, food and business.",
+    
+    "rooms": [{
+        "type": "Standard Single Room",
+        "number": 50,
+        "description": "These are small rooms",
+    
+        "price": 1000000
+    }, {
+        "type": "Standard Double Room",
+        "number": 30,
+        "description": "These are double rooms",
+    
+        "price": 1200000
+    }, {
+        "type": "Suite",
+        "number": 10,
+        "description": "Amazing double rooms",
+    
+        "price": 2500000
+    }],
+    "location": {
+        "address": "Calle 17 No 40B - 300, El Poblado, 050001 Medellín, Colombia",
+        "coordinates": [6.219278, -75.568575]
+    },
+    "Reviews": [{"Ratings": {"Overall": "5.0", "Value": "4", "Service": "5"}, "AuthorLocation": "Poulsbo, Washington, United States", "Title": "\u201cExcellent Breakfast\u201d", "Author": "Jack M", "ReviewID": "UR126512536", "Content": "I was attending a breakfast meeting at this hotel yesterday. the breakfast that was served was outstandaing. The eggs were prepared just right, the bacon and home fries were perfect. I really apprecated the attention to detail shown by the staff. Nicly done.", "Date": "March 22, 2012"}, {"Ratings": {"Overall": "4.0"}, "AuthorLocation": "Rigby, Idaho", "Title": "\u201cAs close as it gets to the Space Needle\u201d", "Author": "ajnuff", "ReviewID": "UR126417951", "Content": "This hotel is across the street then exactly 1 block from the Space Needle. All the rooms on the west side will have an excellent view of it. The hotel provided a good stay for me. Pros: Wide, spacious room Good value for being near the central business district Big flatscreen TV (I didn't turn it on so I can't comment on HD availability) Breakfast buffet was good quality, and quite varied in selections available. You do pay for the buffet however, unlike some other Best Western properties. The price is reasonable and children eat free. Comfortable bed Closest lodging to the Space Needle Although it has been updated, the hotel maintains a retro feel, much like the Space Needle. Cons: Parking costs extra", "Date": "March 20, 2012"}, {"Ratings": {"Service": "5", "Cleanliness": "5", "Overall": "4.0", "Value": "4", "Sleep Quality": "5", "Rooms": "4", "Location": "5"}, "AuthorLocation": "Olympia, Washington", "Title": "\u201cConvenient location, price is right!\u201d", "Author": "blball520", "ReviewID": "UR126041763", "Content": "Nice motel, clean, rooms are warm and smell good. Bathrooms clean. Has free wifi! Parking is $18/night, but this is good considering most of the other motels and hotels charge $25. Great blackout drapes, quiet neighborhood. Restaurant is a little pricey, but nice. Restaurant only open at odd times but there is a McDonald's on the next block. This place is almost next to the Space Needle! I like this place, handy and inviting with terrific front desk staff.", "Date": "March 13, 2012"}, {"Ratings": {"Service": "4", "Cleanliness": "5", "Overall": "4.0", "Value": "4", "Sleep Quality": "4", "Rooms": "5", "Location": "4"}, "AuthorLocation": "", "Title": "\u201cTwo days to see a city\u201d", "Author": "pepeblueyes", "ReviewID": "UR125620549", "Content": "Excellent location, 2 blocks far from Space Needle. The restaurant had a perfect breakfast buffet, and the parking was free. 5 minutes driving to main spots in downtown.", "Date": "March 4, 2012"}, {"Ratings": {"Service": "5", "Cleanliness": "5", "Overall": "5.0", "Value": "5", "Sleep Quality": "5", "Rooms": "5", "Location": "5"}, "AuthorLocation": "Sedro Woo", "Title": "\u201cExcellent!\u201d", "Author": "Cristina W", "ReviewID": "UR125459820", "Content": "Great location, wonderful staff, and incredibly clean. The restaurant had a perfect breakfast buffet, and we were very impressed with the view of the Space Needle!", "Date": "March 1, 2012"}],
+	
+    "services": ["Room service", "Car hire", "Airport shuttle (surcharge)", "24-hour front desk", "Express check-in/check-out", "Currency exchange", "Tour desk", "Luggage storage", "Concierge service", "Laundry", "Dry cleaning", "Ironing service", "Meeting/banquet facilities", "Business centre", "Fax/photocopying"]
+}, {
+    "name": "Hotel Karin",
+    "stars": 3,
+    "description": "The newly opened, small and charming Karin hotel is situated in the green belt of Budapest, 10 km north of the city centre, and offers excellent public transport links and free parking.\nAir-conditioned and nicely furnished en-suite double rooms with balconies and apartments provide for a peaceful night's rest. In the pleasant restaurant you can start every morning at the rich complimentary breakfast buffet.\nWireless internet access is available in the entire hotel free of charge.\n04. Újpest is a great choice for travellers interested in zoo, monuments and city trip.",
+    
+    "rooms": [{
+        "type": "Double or Twin Room",
+        "number": 10,
+        "description": "These are small rooms",
+    
+        "price": 35000
+    }, {
+        "type": "Apartment (2 Adults)",
+        "number": 15,
+        "description": "These are amazing apartmants",
+    
+        "price": 47500
+    }],
+    "location": {
+        "address": "1047 Budapest, Foti ut 75, Hungary",
+        "coordinates": [47.577586, 19.092553]
+    },
+    "Reviews": [{"Ratings": {"Service": "1", "Cleanliness": "1", "Overall": "1.0", "Value": "3", "Sleep Quality": "3", "Rooms": "1", "Location": "1"}, "AuthorLocation": "Port Angeles, Washington", "Title": "\u201cHORRIBLE SERVICE, dirty room Go elsewhere.\u201d", "Author": "Daniel B", "ReviewID": "UR126944022", "Content": "Forst impression was that this hotel needed a rennovation. Check in was fine. Hallways smelled funny and were kind of dingy and dirty. Walking into room, it wasn't very clean and looked as though someone made the bed and wiped the bathroom down with a wet rag. Hair in the bedsheets, shower (many), and toilet. Some kind of film on toilet, looked like someone wiped off urine with their hand. Dust was thick throughout my room especially closet doors, and walls were grose. I did sleep well (on top of the covers with a sweater beneath me), but after all I was exhausted. The kicker- I was in Seattle to visit my grandma who is in the hospital with heart problems so I got in late. Housekeeping knocked on my door at 8am to ask if I was checking out when check out is at 12. at 11:30 I asked for a late check out and the frigid front desk clerk told me no because I wasn't an Elite Diamond Member for the rewards program, I also mentioned I work for a Choice Hotels property and she told me it didnt matter. I then proceeded to grab a pamphlet which EVERY brand of Choice Hotel's has and show her in writing that any level member of Choice Priveleges is entitled to a late checkout, and she told me that they should take it out of there because their property doesn't do it, \"Are you serious???\" (Keep in mind that 6000 properties have this same pamphlet and honor the program but hers should be exempt according to her). I walked back up to my room and I get a call offering the late check out after I walked away angrily. I get back up stars and at 12:15 and with a \"Do Not Disturb\" sign in my door, housekeeping knocked again. I pulled the sign out of the door and asked housekeeping to read it. At this point I was so mad, I forgot about the 30 min nap I wanted to take before driving back home 3 hours, and they knock and call again 10 minutes later to see if I am out of the room. It was so rude and unreal I think I am still in shock.", "Date": "March 29, 2012"}, {"Ratings": {"Service": "1", "Cleanliness": "1", "Overall": "1.0", "Value": "1", "Sleep Quality": "4", "Rooms": "4", "Location": "4"}, "AuthorLocation": "Kelowna", "Title": "\u201cworse service ever\u201d", "Author": "TAMAR B", "ReviewID": "UR126602748", "Content": "I have never had such bad experience as my recent stay in Comfort Inn, Aurrora, Seattle. Everything was just fine (as always is with this chain), until we woke in the morning to find that the Toilet was clogged\u2026 Called the front desk, where the guy said \u201cOoo, right now, I\u2019m all by myself and the house keeping\u2019s not here yet \u2026\u201d (was surely past 8am, maybe even 9!) I said \u201cOK, not urgent right now, we\u2019re going to have breakfast, will they be able to take care of it by the time we\u2019re back?\u201d \u201csure\u201d was the promise, well, sure enough we returned to find the same clogged toilet. Now there was no answer from front desk, so I went there. The only lady found at front desk was house-keeping, all by herself said she couldn't leave front desk \u201ccan we use another room's bathroom then?\u201d \u201cNo!, all the rooms are CLEAN!, we can\u2019t have you mess another room\u2026\u201d - apparently she produced the plunger, and hand it to ME, saying \u201cwe don\u2019t have anyone to do it right now\u201d\u2026\u2026\u2026.! Some minutes later, there was a knock on the door. It was house keeping, apparently not for the toilet, only she was hoping we were gone so she could clean the room, when I asked her to look the toilet, she tried to use the plunger, but eventually, got things messier and left\u2026 upon checking out, I told the guy at front desk I was so disappointed and complained that they wouldn\u2019t even let us use another room\u2019s bathroom, he wasn\u2019t surprised at all and just said \u201call the rooms are booked, we don\u2019t have a spare room\u201d\u2026 didn\u2019t even offer any apology, apparently, when I shot a sharp look at him, he mumbled to himself \u201cI\u2019m sorry\u201d\u2026 That day, my husband used the lobby\u2019s bathroom, I didn\u2019t use any at all, (brushed my teeth with a bottle next to the car\u2026) OK, got to make a long story short: in the morning the toilet was clogged, they didn\u2019t send anyone to repair, though were kind enough to hand me a plunger so that I\u2019ll do it myself, they wouldn\u2019t let use another room\u2019s bathroom, and on top of all, they were rude Isn\u2019t it interesting that this was 1 of rare occasions when I did not receive request I useualy do from Choice (or Comfort inn) to fill up a survey about this hotel soon after my stay? theyn nearly always do send this\u2026 I have written to Choice to make a complain, however, never received any respond at all\u2026", "Date": "March 24, 2012"}, {"Ratings": {"Service": "3", "Cleanliness": "3", "Overall": "3.0", "Value": "4", "Sleep Quality": "3", "Rooms": "3", "Location": "4"}, "AuthorLocation": "Novi, Michigan, United States", "Title": "\u201cGood value in North Seattle\u201d", "Author": "Robert A", "ReviewID": "UR125764136", "Content": "I stayed here for a business trip. Great location, nice room, friendly staff. Great continental breakfast. It's close to many attractions in the area - Northgate mall, Pike Place Market, and Downtown Seattle. The cons were that the rooms have really thin walls. I could hear people talking in other rooms & out in the hallway. Also, could not access the free WiFi from my room or the lobby.", "Date": "March 7, 2012"}],
+	
+    "services": ["Room service", "Airport shuttle (surcharge)", "24-hour front desk", "Tour desk", "Ticket service", "Luggage storage", "Laundry", "Ironing service", "Fax/photocopying"]
+}, {
+    "name": "Hotel Quirinale",
+    "stars": 4,
+    "description": "Set in a 19th-century building, the Quirinale is 10 minutes' walk from the Coliseum. This historic hotel is connected to Rome Opera House through a passageway in its leafy courtyard. Rooms come with free Wi-Fi.\nHotel Quirinale's spacious rooms are uniquely decorated and feature classic furnishings and parquet floors. Each room offers a flat-screen TV with satellite and pay-per-view channels. Some rooms overlook the small garden and courtyard.\nThe hotel's continental breakfast can be enjoyed outdoors in fine weather. There is also an à la carte restaurant, and the hotel's Opera Bistrot is open all afternoon for more informal meals.\nThe Quirinale is located 200 metres from Repubblica Metro Station. The Spanish Steps and the Trevi Fountain are both within a 15-minute walk, while Vatican City can be reached by car in 10 minutes.\nCentral Station is a great choice for travellers interested in monuments, architecture and ancient landmarks.",
+    
+    "rooms": [{
+        "type": "Small Double or Twin Room",
+        "number": 10,
+        "description": "These are small rooms",
+        "price": 420.5
+    }, {
+        "type": "Standard Double or Twin Room",
+        "number": 25,
+        "description": "These are double rooms",
+        "price": 475
+    }, {
+        "type": "Superior Double or Twin Room",
+        "number": 3,
+        "description": "Amazing suites",
+        "price": 560.5
+    }, {
+        "type": "Executive Double or Twin Room",
+        "number": 13,
+        "description": "Amazing suites",
+        "price": 1000.5
+    }, {
+        "type": "Suite",
+        "number": 13,
+        "description": "Very exclusive suites",
+        "price": 1300
+    }],
+    "location": {
+        "address": "Via Nazionale 7, Central Station, 00184 Rome, Italy",
+        "coordinates": [41.901707, 12.494887]
+    },
+    "Reviews": [{"Ratings": {"Service": "3", "Cleanliness": "3", "Overall": "3.0", "Value": "1", "Sleep Quality": "3", "Rooms": "3", "Location": "4"}, "AuthorLocation": "San Francisco, California", "Title": "\u201cCharming but poor value\u201d", "Author": "MSir", "ReviewID": "UR127157541", "Content": "This is based on a stay in room 9. Great location, friendly staff, lovely landscaping, cozy gas burning fireplace. However, for $200 you get a room that is only big enough to fit the bed in and a \"patio\" that is really the landing to the room that is three feet from the parking space. For the money, try exploring any number of the great B&B's in the area so you won't feel so cooped up! Room was clean, but hardly luxury. I can't speak to the other rooms, but avoid #9!", "Date": "April 2, 2012"}, {"Ratings": {"Service": "5", "Cleanliness": "5", "Overall": "5.0", "Value": "4", "Sleep Quality": "5", "Rooms": "5", "Location": "5"}, "AuthorLocation": "Scranton, Pennsylvania", "Title": "\u201cA Great Place\u201d", "Author": "Beth I", "ReviewID": "UR126934930", "Content": "My husband and I stayed here about a month ago together, while on a trip to CA just the two fo us. WE were both very pleased with the location of the Inn, and even more impressed with the staff. Everyone was very kind, and gave of us tips of the best local places to visit.", "Date": "March 29, 2012"}, {"Ratings": {"Service": "4", "Cleanliness": "4", "Overall": "5.0", "Value": "5", "Sleep Quality": "5", "Rooms": "5", "Location": "5"}, "AuthorLocation": "Charleston, South Carolina", "Title": "\u201cBest Napa Trip!\u201d", "Author": "briguy410", "ReviewID": "UR126748510", "Content": "We arrived after midnight, quite exhausted, but found a very warm reception from the Inn keeper and an unbelievably clean and comfortable suite. The fire was burning bright and the jacuzzi tub was a welcome treat to our tired travel bones. I recommend Christopher's Inn 7 days a week on twice on Sunday! Cheers, Brian", "Date": "March 27, 2012"}, {"Ratings": {"Service": "5", "Cleanliness": "5", "Overall": "5.0", "Value": "5", "Sleep Quality": "5", "Rooms": "5", "Location": "5"}, "AuthorLocation": "Montreal, Canada", "Title": "\u201cNice stay\u201d", "Author": "Andy2112", "ReviewID": "UR126198574", "Content": "We thought this was a great place to stay when in Calistoga. it is not a spa but there are plenty close by. It is a little pricey but so is everything else in Napa Valley. The TV is not great but no one comes here to watch TV. I was very pleased with our location and accommodations and would have changed very little.", "Date": "March 16, 2012"}],
+    
+	"services": ["Room service", "Car hire", "24-hour front desk", "Currency exchange", "Tour desk", "Ticket service", "Luggage storage", "Babysitting/child services", "Laundry", "Dry cleaning", "Ironing service", "Meeting/banquet facilities", "Business centre", "Fax/photocopying"]
+}, {
+    "name": "Hotel Raphael – Relais & Châteaux",
+    "stars": 5,
+    "description": "One street from Piazza Navona, Hotel Raphael offers luxurious rooms with marble bathroom and parquet floors. Its roof terrace boasts panoramic views of Rome, from St. Peter's to the Pantheon.\nAll air-conditioned rooms come with flat-screen satellite TV and free wired internet. Each elegant bathroom features a bathrobe, slippers, and courtesy set by Bulgari. Some rooms were designed by architect Richard Meier and include an entertainment system by Bose.\nThe 5-star Hotel Raphael – Relais & Châteaux serves an abundant buffet breakfast every morning. Guests can dine at the La Madre Terra restaurant or, weather permitting, at La Terrazza Bramante on the roof terrace.\nThe Raphael Hotel is well connected by buses and most of Rome's historic attractions are just a short walk away. You can reach the Pantheon in 5 minutes on foot, while Castel Sant'Angelo is only 700 metres away.\nNavona is a great choice for travellers interested in food, culture and shopping.",
+    "rooms": [{
+        "type": "Standard Plus Double Room",
+        "number": 10,
+        "description": "These are small rooms",
+        "price": 312.5
+    }, {
+        "type": "Executive Double Room",
+        "number": 25,
+        "description": "These are double rooms",
+        "price": 322.5
+    }, {
+        "type": "Superior Double Room",
+        "number": 3,
+        "description": "Amazing suites",
+        "price": 352.5
+    }, {
+        "type": "Standard Plus Triple Room",
+        "number": 13,
+        "description": "Amazing suites",
+        "price": 452.5
+    }, {
+        "type": "Junior Suite",
+        "number": 13,
+        "description": "Very exclusive suites",
+        "price": 1400
+    }],
+    "location": {
+        "address": "Largo Febo 2, Navona, 00186 Rome, Italy",
+        "coordinates": [41.896601, 12.47532]
+    },
+    "Reviews": [{"Ratings": {"Service": "4", "Cleanliness": "5", "Overall": "3.0", "Value": "3", "Sleep Quality": "4", "Rooms": "4", "Location": "5"}, "AuthorLocation": "Fort Worth, Texas", "Title": "\u201cA/C didn't work very well\u201d", "Author": "Kirk H", "ReviewID": "UR127524558", "Content": "The room was clean and the staff was nice. It was early evening when we checked in. We dropped off our stuff, turned the A/C down to 65 degrees, and headed downtown for a few hours. When we came back, the room wasn't cool at all. It was probably between 75 and 80 and that's about what the temperature was outside. I didn't feel like jacking with changing rooms or having someone come up and work on the A/C at 1:00 AM, so we just went to sleep. I have to admit, the bed was very comfortable. I was a bit disappointed about the A/C though. For $99.87/ night I expect the A/C to work right.", "Date": "April 9, 2012"}, {"Ratings": {"Service": "4", "Cleanliness": "5", "Overall": "4.0", "Value": "4", "Sleep Quality": "4", "Rooms": "4", "Location": "4"}, "AuthorLocation": "London, United Kingdom", "Title": "\u201cClean, good location, pleasant staff\u201d", "Author": "benandki", "ReviewID": "UR125464408", "Content": "We stayed in one of the larger suites just behind the lobby (we were upgraded by the incredibly helpful and cheerful guy at reception, who also gave us some good advice and recommendations throughout our stay). The room itself was very clean, very large, with a massive king size bed. Large flat screen TV, microwave, etc. Looks slightly dated, lots of artex swirls, but certainly not unpleasant. Room could be a little noisy from heavy doors, and people using their bathrooms, but our sleeping patterns were a little messed up, so not sure if it would normally wake you up! Simple serve yourself breakfast - hot waffles, cereal, juices, pastries, some fruit and yoghurt. Not spectacular, but good enough. Not warm enough to use the pool, but it looked quite nice and clean. Location is great, very easy to get in to central Dallas, we found cheap parking on N Lamar and Ross - $7 all day at the America Parking lot. Also very easy to get on the main highways. Denny's across the road serves simple but tasty food, 24 hours a day, very cheap.", "Date": "March 1, 2012"}, {"Ratings": {"Service": "5", "Cleanliness": "5", "Overall": "5.0", "Value": "5", "Sleep Quality": "5", "Rooms": "5", "Location": "5"}, "AuthorLocation": "Austin, Texas, United States", "Title": "\u201cGreat Overall for Price\u201d", "Author": "Neal P", "ReviewID": "UR124602746", "Content": "I am a business traveler and finding a place to stay that makes you feel at home is important to me. This a great neighborhood, lots of resturants with shopping close by if you need anything. The rooms are very clean and you will get a great night sleep (no noisey traffic). What I appreciate the most is how the staff works together in providing a pleasant travel experience. I truely felt at home. Thanks again everyone. You are the reason I look forward to many happy returns. You truely do offer the best service.", "Date": "February 15, 2012"}],
+	
+    "services": ["Room service", "Car hire", "24-hour front desk", "Express check-in/check-out", "Currency exchange", "Tour desk", "Ticket service", "Luggage storage", "Concierge service", "Babysitting/child services", "Laundry", "Dry cleaning", "Ironing service", "Shoeshine", "Meeting/banquet facilities", "Business centre", "Fax/photocopying", "VIP room facilities", "Bridal suite"]
+}, {
+    "name": "Kempinski Hotel Corvinus Budapest",
+    "stars": 5,
+    "description": "Situated 700 metres from the Chain Bridge and Saint Stephen's Basilica, Kempinski Hotel Corvinus Budapest offers several restaurants, luxurious air-conditioned rooms, and an indoor pool. Its architecture is a symbol of modern Budapest.\nThe elegant non-smoking rooms at Hotel Kempinski Corvinus are all equipped with cable TV and free WiFi. They either feature views of the park, the city, or the Fashion Street.\nThe Nobu Restaurant serves delicious sushi and innovative Japanese dishes, while the ÉS Bisztró-Brasserie features a summer terrace and serves Hungarian and Viennese specialities. The Living Room is a classic coffeeshop with a modern twist. Drinks can be enjoyed at Blue Fox The Bar.\nKempinski The Spa, on second floor provides unique massages and body treatments with natural products. At no surcharge, guests can enjoy the sauna and the fitness centre.\nFrom the nearby underground and bus stops, guests can easily access all attractions. The Hungexpo Exhibition Centre is a 20-minute drive away.\n05. Belváros - Lipótváros is a great choice for travellers interested in shopping, history and food.",
+    
+    "rooms": [{
+        "type": "Corvinus Suite Collection",
+        "number": 100,
+        "description": "These are some great suites",
+    
+        "price": 75000
+    }, {
+        "type": "Grand Deluxe Double Room",
+        "number": 150,
+        "description": "These are amazing apartmants",
+    
+        "price": 89000
+    }, {
+        "type": "Parlor Suite",
+        "number": 25,
+        "description": "These are amazing apartmants",
+    
+        "price": 112000
+    }],
+    "location": {
+        "address": "1051 Budapest, Erzsébet tér 7-8., Hungary",
+        "coordinates": [47.497362, 19.052305]
+    },
+    "Reviews": [{"Ratings": {"Service": "5", "Cleanliness": "4", "Overall": "3.0", "Value": "4", "Sleep Quality": "4", "Rooms": "3", "Location": "3"}, "AuthorLocation": "Hershey Pa", "Title": "\u201cVery close to the car rental return center\u201d", "Author": "cdeast", "ReviewID": "UR127839140", "Content": "Decent basic motel. Friendly and efficient check-in staff. Gave great directions to Old town Scottsdale without having to drive on the freeway. Room was fine and met our needs. Lighting and storage were good. Bathroom was clean and a decent size. Had an attached restaurant, however we didn't eat there. Less than 5 minutes from car rental center.Our room location was away from the freeway and was relatively quit. However the noise level from guests leaving for the airport was evident starting at about 4am. Would stay here again - can't beat the very reasonable room rate.", "Date": "April 13, 2012"}, {"Ratings": {"Service": "4", "Cleanliness": "4", "Overall": "2.0", "Value": "2", "Sleep Quality": "2", "Rooms": "2", "Location": "3"}, "AuthorLocation": "Texas", "Title": "\u201cDepressing place to stay after a vacation\u201d", "Author": "Basketballfan", "ReviewID": "UR127769028", "Content": "We stayed here the last night of our vacation because we had a very early flight to catch and were worried about phoenix/Scottsdale traffic. The location is good for that purpose but, to be honest, our hearts sank when we walked into the room. The web photos were deceiving. Admittedly, the room was clean and the bed comfortable, but the room was so dreary--and expensive considering what you get. Leave the bathroom fan on if you need 'white noise' to block out the planes (yes, the fan is that loud). We've stayed in many Best Western hotels before and this one is probably the most depressing. We had to drive miles to find a good restaurant for dinner. My advice is to risk the traffic and stay in a nicer area of the city.", "Date": "April 12, 2012"}, {"Ratings": {"Service": "3", "Cleanliness": "3", "Overall": "3.0", "Value": "3", "Sleep Quality": "3", "Rooms": "3", "Location": "5"}, "AuthorLocation": "Essex, England", "Title": "\u201cConvenient Airport Location with good shuttle.\u201d", "Author": "Niel01", "ReviewID": "UR127060485", "Content": "Have stayed at this Motel on two occasions within the last month. Conveniently situated about 5 minutes from the Airport Terminal and also from the Car Hire Centre. The Hotel runs a shuttle every 15 minutes to the Airport which seems to work well. Situated close to the junctions of the I.17 to Flagstaff and the I.10 to Tucson in the south. The Motel is situated on two levels, but with no lift which could be a problem to some with luggage. The rooms are clean and ours contained two reasonably comfortable twin beds, room safe, TV and a small balcony. There was some noise overnight from the Airport and Interstates - this was not so bad as to create a problem, but clearly the sound insulation is not as good as it might be. The Motel has a small pool and whirlpool and provides some light refreshment in the morning, but not a breakfast - there is an adjoining Roadhouse Restaurant providing meals throughout the day which seemed quite good. The one disappointment which I had was that, after a long drive from Sedona, they would not let me check in at 2.30pm insisting that it had to be the stipulated 4pm. Can't really complain at that, but most hotels do allow early check in. Apart from that Reception Staff were friendly and helpful. Not an outstanding hotel, but ok and no real complaints - would use again for the convenience.", "Date": "April 1, 2012"}, {"Ratings": {"Service": "3", "Cleanliness": "4", "Overall": "4.0", "Value": "3", "Sleep Quality": "4", "Rooms": "4", "Location": "4"}, "AuthorLocation": "Richland, Washington", "Title": "\u201cAlmost Best Western\u201d", "Author": "tootalltraveler", "ReviewID": "UR126762467", "Content": "We stayed 1 night in a 2 queen room overlooking the outdoor pool on the second level. No elevator so be prepared to carry \"everything\" up the stairs. Not a big deal for me but beware for those not adept for that. We didn't use the pool but it seemed very nice and those that were looked to be enjoying it. The room was very comfortable. Everything was clean and overall the grounds were well kept. A minor bug is the hot water in the shower was not consistent. You had to be on the ready to adjust every minute as it would seem to fade away. Another minor annoyance is that we booked the room for 4 people and it was only stocked with 3 bath towels. I'm not in the hotel business but there has to be a way to match the room stock to the customer coming in. Anyway no big deal again to go to the front desk and ask for another towel. The noise level could be a bother to some. You are right next to the freeway and the airport and can clearly hear both in the evening quiet. We live near railroad tracks at home so we are accustomed to noise and weren't bothered by it but you could be if you are a light sleeper. The biggest downer was the front desk friendliness. There seemed to be a cloud of gloom hanging over a couple of the people working the desk while a couple others at least tried but seemed to be restrained by the gloom and doomers around them. At least crack a smile for the love of pete. The shuttle to the airport was nice and the driver was very courteous and friendly. He should be in charge of the front desk. We did eat breakfast at the connected restaurant. It was very good and our server was great. Overall I would stay again for the convenience to the airport.", "Date": "March 27, 2012"}],
+	
+    "services": ["Room service", "Packed lunches", "Car hire", "Shuttle service (surcharge)", "Airport shuttle (surcharge)", "24-hour front desk", "Express check-in/check-out", "Currency exchange", "Tour desk", "Ticket service", "Luggage storage", "Concierge service", "Babysitting/child services", "Laundry", "Dry cleaning", "Ironing service", "Shoeshine", "Trouser press", "Daily maid service", "Meeting/banquet facilities", "Business centre", "Gift shop", "VIP room facilities"]
+}, {
+    "name": "New York Marriott Marquis",
+    "stars": 4,
+    "description": "Located in the heart of Times Square and the Broadway theater district, this 4-star hotel features 3 dining options, including a revolving rooftop restaurant.\nThe luxurious rooms at the New York Marriott Marquis have a spacious seating area, an LCD TV with satellite channels and a stylish marble bathroom with a range of amenities. Select rooms offer a panoramic view of New York city.\nGuests can enjoy continental cuisine at the popular revolving rooftop View Restaurant & Lounge, or have American cuisine at Crossroads American Kitchen & Bar. Alternatively, the Broadway Lounge offers cocktails and light refreshments on the hotel's 8th floor, with views overlooking Times Square. The lobby on this floor has free Wi-Fi.\nThe Marriott Marquis also features a 4,000 square-foot fitness center, which also overlooks Times Square.\nThe New York Marriott is just minutes from Fifth Avenue shops.",
+    
+    "rooms": [{
+        "type": "King Room with Sofa Bed",
+        "number": 24,
+        "description": "These are small rooms",
+    
+        "price": 290
+    }, {
+        "type": "Executive Corner King Room with Sofa Bed",
+        "number": 14,
+        "description": "These are double rooms",
+    
+        "price": 410
+    }, {
+        "type": "Presidential King Suite",
+        "number": 14,
+        "description": "Amazing double rooms",
+    
+        "price": 1800
+    }],
+    "location": {
+        "address": "1535 Broadway, New York, NY 10036, USA",
+        "coordinates": [40.75858, -73.986254]
+    },
+    "Reviews": [{"Ratings": {"Service": "2", "Cleanliness": "2", "Overall": "3.0", "Value": "4", "Sleep Quality": "3", "Rooms": "3", "Location": "4"}, "AuthorLocation": "Breen", "Title": "\u201cReally? Needs work.\u201d", "Author": "MrSkully", "ReviewID": "UR125697409", "Content": "Got here at 1:30PM told I had to wait till 3PM to check in, there is 3 checking parking spots and one was fill all day by an employee. The drains are very slow, the tub water will fill to above your ankles when in the shower and the toilet does not flush all the way. Caution in rm 121 as the microwave will burn your stuff. The room was Ok, just could of been cleaned better and the plumbing needs work bad....", "Date": "March 6, 2012"}, {"Ratings": {"Service": "1", "Cleanliness": "1", "Overall": "1.0", "Value": "1", "Sleep Quality": "1", "Rooms": "1", "Location": "3"}, "AuthorLocation": "Edmonton, Canada", "Title": "\u201cLoud &Unclean\u201d", "Author": "Gary S", "ReviewID": "UR124896000", "Content": "We've stayed in lots of Super 8s, so we weren't expecting the Ritz or anything, but quite honestly they're usually a decent room at a great price. Not this time. The room was dirty (there was \"stuff\" embedded in the walls in the bathroom, and I'm just not gonna speculate on what it was), and the walls must have been less than an inch thin. We could hear every \"conversation\" the loud guy next door had with his bratty kids, and every morning it sounded like the maids were working with heavy equipment right outside our door. Nothing like 2-3 hours of off-and-on sleep to start each vacation day off right! I still think Super 8s can be a good deal - but steer clear of this one.", "Date": "February 20, 2012"}, {"Ratings": {"Service": "2", "Cleanliness": "1", "Overall": "1.0", "Value": "2", "Sleep Quality": "1", "Rooms": "1", "Location": "3"}, "AuthorLocation": "Aurora, Colorado, United States", "Title": "\u201cI think someone was murdered in #219\u201d", "Author": "Raimund K", "ReviewID": "UR121901146", "Content": "We were in town from Denver on business and just needed a place for one night so we thought, \"Why not Super 8?\" The experience answered that question. We needed four single rooms total. When first walking into the lobby we were told they could accommodate us. After a few minutes of deciding where to stay we went back in and were told they only had one single available. We negotiated and were able to get doubles for the price of a single. All of us got our room keys, and proceeded to get baggage out of the rental car. 3/4 of the keys didn't actually unlock any doors, and we were told it was due to being too close to electronics. The one key that did work had 115 written on it. We open the door to 115, there is luggage open on the beds and the shower is running. (Good thing we didn't catch a glance) Returned to office and told them of the situation and she said, \"Sorry, were doing training and you were supposed to get 215.\" The lock to another one of our rooms still wouldn't unlock. They switched that room to 219. Our manager was uncomfortable with having an adjoining room to another room where we didn't know someone. So we switched 215 to 220. After driving 13 hours to Peoria, we all were in need of rest. After waking we found the towels were dirty, there were cigarette burns in a non-smoking room, and upon close inspection there was blood splatter on the walls, carpet, and curtains. The security latch in 219 was also separating from the door. The drain and stopper were missing from the bathtub. The grout in the bathroom looks like it hasn't been scrubbed since the place was built. There was a coffee pot, but no coffee. I told the attendant in the office about our experience at checkout and she said, \"Well you should have came down first thing to let us know about the problem.\" I'm sorry but after driving for half a day I'm not going to inspect our room, go down to the office, and have them switch the room once again.. But I guess next time I know. Not that next time we will stay at the Super 8. Not to mention it was hard to sleep because they have a 24 hour maintenance team doing more talking than working in the parking lot.", "Date": "December 19, 2011"}],
+	
+    "services": ["Room service", "Vending machine (drinks)", "Vending machine (snacks)", "24-hour front desk", "Express check-in/check-out", "Currency exchange", "Tour desk", "Ticket service", "Luggage storage", "ATM/cash machine on site", "Concierge service", "Laundry", "Dry cleaning", "Shoeshine", "Meeting/banquet facilities", "Business centre", "Gift shop"]
+}, {
+    "name": "Park Lane Hotel on Central Park",
+    "stars": 5,
+    "description": "Park Lane Hotel is a deluxe hotel with a European ambiance, providing views over Central Park and the New York skyline. It is only 2 minutes’ walk from the elegant shops of 5th Avenue and the 59th Street N,Q,R underground station.\nSpacious and bright, rooms at Park Lane Hotel are fitted with oversized windows and fine linens. Amenities include flat-screen TVs and access to the on-site fitness centre.\nEnjoy a seasonal menu created by Jeff Cristelli at The Park Room Restaurant, or select from a wide variety of cocktails at Harry's New York Bar.\nNew York’s Museum of Modern Art, Radio City Music Hall, and Rockefeller Center, are all within 10 minutes' walk. With the park directly in front of the hotel, jogging and recreational activities are easily accessible.",
+  
+    "rooms": [{
+        "type": "Executive Queen Room with City View",
+        "number": 24,
+        "description": "These are small rooms",
+    
+        "price": 350
+    }, {
+        "type": "Executive King Room with Park View",
+        "number": 14,
+        "description": "These are double rooms",
+    
+        "price": 410
+    }, {
+        "type": "Executive Junior Suite with Park View",
+        "number": 14,
+        "description": "Amazing double rooms",
+    
+        "price": 420
+    }, {
+        "type": "Premier Room with Partial Park View",
+        "number": 5,
+        "description": "Superior double room with external view",
+    
+        "price": 550
+    }],
+    "location": {
+        "address": "36 Central Park South, New York, NY 10019, USA",
+        "coordinates": [40.76482, -73.975335]
+    },
+    "Reviews": [{"Ratings": {"Service": "5", "Cleanliness": "5", "Overall": "5.0", "Value": "5", "Sleep Quality": "5", "Rooms": "5", "Location": "5"}, "AuthorLocation": "israel", "Title": "\u201cgreat!!!\u201d", "Author": "ras81", "ReviewID": "UR127013206", "Content": "really great hotel, big and clean rooms, with all just all u need including free wifi. the staff is very friendly and the location is excelent", "Date": "March 31, 2012"}, {"Ratings": {"Service": "1", "Cleanliness": "1", "Overall": "1.0", "Value": "1", "Sleep Quality": "1", "Rooms": "1", "Location": "1"}, "AuthorLocation": "Washington DC, District of Columbia", "Title": "\u201cThis place looked like a third world abortion clinic:\u201d", "Author": "Lucas A", "ReviewID": "UR126005109", "Content": "Any positive reviews on this hotel are fake. The floor had crumbs and hair on it. The pillow had pubic hair on it. The outlets and light switch panels where smudged. Curtains had crusties on them. The walls looked like they had sees a few first-grader booger fights. The headboard had suspicious white crust. The lampshade had smudges on it. The couch and curtains had crusties on them. There was food and hair under the bed. The doors had smudges on them. The showerhead was one of those crappy massage showerheads, and it was stuck on a massage setting. The connection of the showerhead leaked and sprayed water to the side. There was an incessant humming in the room. The rooms were dark. The molding was broken. The plastic rings around the elevator buttons were broken. The floors were grimy. The outlets were so old and loose that my Mac charger would fall out. The one soda machine was out of water and more than half of the other beverages, and it had a piece of paper taped to it saying that beverages cost $2. There was no fitness room as advertised, instead it looks like they were using the room to store mattresses--a possible sign that they are dealing with bed bugs. The tile was broken. The tinting on the widows was torn and partially missing. There was no carpet in the downstairs hallway. The \u2018business center\u2019 was two crappy mismatching chairs, a few brochures, and a hanging power strip. Also, the one person working there sent me to an occupied room where another lodger was watching TV. I slept on top of the sheets with the lights on in hopes of keeping away bed bugs. This place is currently rated as a 2.5-star hotel and costs a typical $110 - $140, but that is not even close to an accurate star rating. Unless you are looking for an inexpensive place to kill yourself, do not stay here.", "Date": "March 12, 2012"}, {"Ratings": {"Service": "1", "Cleanliness": "1", "Overall": "1.0", "Value": "2", "Sleep Quality": "1", "Rooms": "1", "Location": "3"}, "AuthorLocation": "New England, USA", "Title": "\u201cToo noisy to sleep\u201d", "Author": "swingspan", "ReviewID": "UR124750512", "Content": "Checked into the room, which was a bit shabby. Sorely in need of renovation. The toilet flushing mechanism broke twice on my stay, and the staff only fixed it grudgingly. But here's the kicker: at 3 a.m., when I went to the desk to inquire about the pounding music, I got this: \"Oh, that's on the 8th floor. Surprised you can hear it, no one else by you complained.\" No apology. No move to another room. No nothing. I'm checking out early in the morning. Won't stay again.", "Date": "February 18, 2012"}],
+	
+    "services": ["Room service", "24-hour front desk", "Tour desk", "Luggage storage", "Concierge service", "Laundry", "Dry cleaning", "Ironing service", "Meeting/banquet facilities", "Business centre", "Fax/photocopying"]
+}, {
+    "name": "Park Plaza Westminster Bridge London",
+    "stars": 4,
+    "description": "Park Plaza Westminster Bridge London is set opposite the Houses of Parliament and Big Ben, on the South Bank. It is close to the London Eye, the Aquarium, restaurants and theatres.\nThe large, contemporary air-conditioned rooms have modern luxuries, including a flat-screen TV, large desk, mini-bar, fridge and safe. Studios and apartments are also available.\nPark Plaza Westminster Bridge is by the River Thames, 500 metres from The London Eye and London Waterloo Station. Westminster Tube Station is just a short walk away.\nWestminster Bridge Park Plaza features the modern, award-winning Brasserie Joel, Ichi Sushi & Sashami, while the 1WB Lounge & Patisserie offers traditional afternoon tea. Primo Bar offers evening entertainment every night.\nThere is a fully equipped 24-hour gym, a 15-metre swimming pool with a sauna and steam room, and the recently opened Mandara Spa, offering a range of luxury treatments.\nLambeth is a great choice for travellers interested in history, monuments and sightseeing.",
+    
+    "rooms": [{
+        "type": "One-Bedroom Apartment",
+        "number": 24,
+        "description": "These are small rooms",
+    
+        "price": 99
+    }, {
+        "type": "Superior Double Room with Internal View",
+        "number": 14,
+        "description": "These are double rooms",
+        
+        "price": 119
+    }, {
+        "type": "Superior Twin Room with Internal View",
+        "number": 14,
+        "description": "Amazing double rooms",
+        
+        "price": 129.5
+    }, {
+        "type": "Superior Double Room",
+        "number": 5,
+        "description": "Superior double room with external view",
+        
+        "price": 159
+    }],
+    "location": {
+        "address": "Westminster Bridge Road, Lambeth, London, SE1 7UT, United Kingdom",
+        "coordinates": [51.500596, -0.116775]
+    },
+    "Reviews": [{"Ratings": {"Service": "5", "Cleanliness": "4", "Overall": "3.0", "Value": "3", "Sleep Quality": "4", "Rooms": "4", "Location": "4"}, "AuthorLocation": "Cranbrook, Canada", "Title": "\u201cOlder property, 100% smoke free.\u201d", "Author": "Dawn B", "ReviewID": "UR127494752", "Content": "I booked this hotel with CheapTickets, which advertised the room as a smoking room. It was not until when I went to check in after a day of travelling that I was informed. Kim at the front desk was wonderful, got Cheap Tickets on the phone for me, looked at their listing on their website and ensured a refund. I did stay for one night since it was so late by that time. It appears to have been a grand hotel in its day. There were many maintenance issues reported as I stood at the front desk on hold with Cheap Tickets for 1/2 an hour and then for another 1/2 hour once I finallly got a person. (I will review Cheap Tickets in a separate one) The staff at the hotel were very accomodating and attended to the maintenance issues quickly, I believe that they had their hands full. The pool area was gorgeous. There are elevators. The rooms have balconies, but without tables or chairs. The rooms have a fridge and a microwave. I never did get any hot water in the bathroom sink, and was only able to have a bath after getting some help getting a plug and some instructions on how to get water in the bath (turn more than 5 times). I was given a cable to hook up to internet in my room, but I was able to get a bar of wifi in there in which to search for another hotel. Kim saved the day. If anyone reads this and stays there, she is the overnight person that comes in at 11pm. Please tell her that she has had a compliment online, because without her I would have been frazzled.", "Date": "April 8, 2012"}, {"Ratings": {"Service": "2", "Cleanliness": "1", "Overall": "1.0", "Value": "1", "Sleep Quality": "1", "Rooms": "1", "Location": "3"}, "AuthorLocation": "Raleigh", "Title": "\u201cDreadful\u201d", "Author": "Mark B", "ReviewID": "UR126322357", "Content": "Dirty, dark, and dated. Air conditioning was broken for most of our 3 night stay. Most of the advertised amenities are nonexistent; i.e. in-room wifi, pool bar and restaurant. The upholstery on the furniture in the restaurant was FILTHY! If I hadn't pre-paid, I'd have found other lodgings. On the plus side, convenient access to the 10; two great restaurants right across the street; centrally located.", "Date": "March 19, 2012"}, {"Ratings": {"Cleanliness": "3", "Overall": "3.0", "Value": "3", "Sleep Quality": "4", "Rooms": "3", "Location": "4"}, "AuthorLocation": "dfw", "Title": "\u201cNice for the price\u201d", "Author": "Mr_Kov", "ReviewID": "UR126189231", "Content": "After 1 night in a grotty Super 8 I decided to pay a little more and stayed 1 night here. Not bad for the price I paid. Hotel is 20-30 years old. Clean rooms. Toilet flush was not great, but I've had that same problem in ***** hotels. Wifi was fine for me. TV good. Did not have time to try the $4 breakfast. Nice view of the mountains! Not fantastic but much better than a Super 8! There is an excellent hiking trail about 2 miles from the hotel,", "Date": "March 16, 2012"}],
+	
+    "services": ["Room service", "Car hire", "24-hour front desk", "Express check-in/check-out", "Currency exchange", "Ticket service", "Luggage storage", "ATM/cash machine on site", "Concierge service", "Laundry", "Dry cleaning", "Ironing service", "Shoeshine", "Meeting/banquet facilities", "Business centre", "Fax/photocopying", "VIP room facilities", "Bridal suite"]
+}, {
+    "name": "The Cumberland - A Guoman Hotel",
+    "stars": 4,
+    "description": "This stylish 4-star hotel is in the West End, 100 metres from Marble Arch London Underground Station. It boasts modern, luxury rooms and a Michelin-starred restaurant.\nThe Cumberland - A Guoman Hotel is just opposite Hyde Park and Marble Arch. The famous shops of Oxford Street are only 100 metres away.\nAll luxury rooms at The Cumberland Hotel offer flat-screen TVs, Egyptian cotton bed linen, and power showers with toiletries. Some rooms also feature views over Hyde Park or Marble Arch.\nFilled with original sculptures, paintings and artworks, The Cumberland Hotel includes a gym and 3 bars.\nThere is 24-hour room service and a 24-hour concierge service.\nWestminster is a great choice for travellers interested in shopping, theatre and monuments.",
+    
+    "rooms": [{
+        "type": "Deluxe King Room",
+        "number": 24,
+        "description": "These are small rooms",
+    
+        "price": 145
+    }, {
+        "type": "Executive Twin Room",
+        "number": 14,
+        "description": "These are double rooms",
+    
+        "price": 169
+    }, {
+        "type": "Executive King Room",
+        "number": 3,
+        "description": "Amazing king rooms",
+    
+        "price": 189.5
+    }],
+    "location": {
+        "address": "Great Cumberland Place, Westminster, London, W1H 7DL, United Kingdom",
+        "coordinates": [51.513916, -0.159231]
+    },
+    "Reviews": [{"Ratings": {"Overall": "5.0"}, "AuthorLocation": "Kirkland, WA", "Title": "\u201cEnjoyed our stay\u201d", "Author": "Kirkland_Traveller", "ReviewID": "UR128006539", "Content": "My husband and I stayed here for a weekend in March when we came to Phoenix for spring training. The room was clean, the area was quiet and the bed was super comfortable. We didn't use the pool but it looked nice. We were impressed with the breakfast which included a choice of cold items (juice, milk, cereal, yogurt, fruit and rolls) and hot items (eggs, make-your-own-waffles, toast and a meat item). The woman who runs the breakfast room did a great job keeping everything filled up and coffee always ready. Be sure to arrive early - we get there about 7:30 both mornings we stayed there and got nearly the last table.", "Date": "April 16, 2012"}, {"Ratings": {"Service": "3", "Cleanliness": "3", "Overall": "3.0", "Value": "3", "Sleep Quality": "3", "Rooms": "3", "Location": "4"}, "AuthorLocation": "Rio Rancho, New Mexico", "Title": "\u201cit was OK\u201d", "Author": "Freeindeed4", "ReviewID": "UR126609505", "Content": "I booked this hotel for my family of four (husband, me, 13 yo, 6 yo) for a 5 day Spring Break get away. Based on the reviews (cleanness and great breakfast) is why I went with it. I'm not super picky in other areas, that's mainly what I look for, BUT BIG MISTAKE for ignoring other \"cons\" mentioned.... Room: first the room was clean but more like a \"remodel\" type of clean looks like walls were painted over and you could still see the dirt under the paint. Sinks looked like they didn't use a good cleaner and just wasn't very clean, it was more of a surface clean. A couple of people mentioned it being small. Well it was tiny and hard to even change with privacy. There was no room around the sink, the only door was to the toilet and shower and then to go out. It is way to crammed for a family. The beds were comfortable and they had good selection of towels. I liked that they gave you an option to pick your services everyday. Breakfast: I liked it and I'd say that was very good: homemade waffles, sausage, gravy, biscuits, a lot of toast, eggs, hash browns, cereal, oatmeal, coffee, juice-it was excellent but the same everyday and it was a little small and crowded. Staff was very nice and helpful with breakfast. Front desk people were not very helpful but nothing worth complaining about. Not good: the walls were so thin I could literally hear the neighbor \"peeing\" in his restroom in the very early of the morning, we could here when someone took a shower (water turning on and running) we could also hear all the people outside (talking, walking, driving) plus the windows did not lock. The property was beautiful and the location and pool was pretty great, easy to get around. I gave it a 3 because it wasn't horrible but it was not good enough to come back too.", "Date": "March 24, 2012"}, {"Ratings": {"Service": "4", "Cleanliness": "3", "Overall": "3.0", "Value": "3", "Sleep Quality": "5", "Rooms": "3", "Location": "3"}, "AuthorLocation": "Antioch, Illinois", "Title": "\u201cRooms adequate, near a busy highway\u201d", "Author": "Sharon B", "ReviewID": "UR125519641", "Content": "It seems like the rooms are smaller than the sister property in Tucson. The fitness room is not at all good. The equipment is not is good condition and the machines are not clean. The pool is nice, as is the jacuzzi. Staff seem helpful and the majority of the facitily seems to be clean. Breakfast was fine and good selection.", "Date": "March 2, 2012"}, {"Ratings": {"Service": "5", "Cleanliness": "5", "Overall": "4.0", "Value": "5", "Sleep Quality": "4", "Rooms": "4", "Location": "4"}, "AuthorLocation": "Mirabel, Qc", "Title": "\u201cOK suite... let me explain:\u201d", "Author": "Ben0844", "ReviewID": "UR125268001", "Content": "The good things: Nice staff, helpfull. Clean and quiet place. Nice pool and jacuzzi. Good location. Very good value overall. The \"could be better\" things: It is a suite with kitchenet that can accomodate up to 6 (!?) persons sleeping... really I would not do more than 4. The 2 queen beds are in the same bedroom so the other couple may have to sleep on the sofabed if you do not wish to share the bedroom (better to know before you go). There is only a small typical hotel room table and 3 chairs, so for eating the meals you have cooked all together can cause a certain logistic problem. The kitchenet is not fully equiped. The kitchen tools are very basic, very small stove, no oven. For pots and pan, ask at the desk because they do not let them in the suite because people steal them. You can do OK with this kitchenet but you better, again, know before you get there with big cooking ideas and be disapointed. We stayed there 2 nights (4 persons) and we appreciated our stay.", "Date": "February 27, 2012"}],
+	
+    "services": ["Room service", "24-hour front desk", "Luggage storage", "Concierge service", "Laundry", "Dry cleaning", "Ironing service", "Meeting/banquet facilities", "Business centre", "Fax/photocopying"]
+}, {
+    "name": "Thistle Marble Arch",
+    "stars": 4,
+    "description": "Superbly situated, Thistle Marble Arch overlooks Oxford Street and Marble Arch, a 10-minute taxi ride away from Paddington Train Station and its fast link to Heathrow Airport. Marble Arch Tube Station and Hyde Park are just 2 minutes' walk away.\nAll comfortable and spacious rooms have an LCD Freeview flat-screen TV, rain shower and umlimited free WiFi. Air conditioning and a Nespresso coffee machine are also provided.\nThistle Marble Arch also has an impressive range of business facilities, including 12 meeting spaces catering from between 4 and 500 people, business centre, on-hand audio/visual team and gym facilities.\nThe on-site restaurant serves a variety of dishes including steaks, all made with locally sourced ingredients. The bar has a relaxed lounge style and offers craft beers and cocktails, while the deli serves an array of fresh sandwiches, snacks and drinks.\nThe financial district is only 10 minutes away via the underground and Selfridges is just a 5-minute walk away.\nWestminster is a great choice for travellers interested in shopping, theatre and monuments.",
+    
+    "rooms": [{
+        "type": "Executive King Room",
+        "number": 24,
+        "description": "These are small rooms",
+    
+        "price": 145
+    }, {
+        "type": "Executive Twin Room",
+        "number": 14,
+        "description": "These are double rooms",
+    
+        "price": 169
+    }, {
+        "type": "Executive Double Room",
+        "number": 3,
+        "description": "Amazing double rooms",
+    
+        "price": 189.5
+    }],
+    "location": {
+        "address": "Bryanston Street, Marble Arch, Westminster, London, W1H 7EH, United Kingdom",
+        "coordinates": [51.514286, -0.156577]
+    },
+    "Reviews": [{"Ratings": {"Service": "3", "Cleanliness": "4", "Overall": "3.0", "Value": "5", "Location": "3", "Rooms": "4"}, "AuthorLocation": "Phoenix, Arizona", "Title": "\u201cGreat value but jacuzzi had heat turned off and was unusable.\u201d", "Author": "mountainwoman2", "ReviewID": "UR128280332", "Content": "My boyfriend and I stayed recently mainly because we wanted a good value with a pool for an overnighter. The room was pleasantly surprising. Comfortable king bed with microwave and mini fridge. However, when we went to the pool are we were told by the maintenance staff that they turn off the heat to the pool and jacuzzi April 1. The water temp was 60 degrees totally unusable. Very disappointing. Other guests in the pool area shared our opinion.", "Date": "April 21, 2012"}, {"Ratings": {"Service": "1", "Cleanliness": "2", "Overall": "1.0", "Value": "1", "Sleep Quality": "3", "Rooms": "2", "Location": "3"}, "AuthorLocation": "hb", "Title": "\u201cBEWARE-PROPERTY UNSAFE, MANAGEMENT NOT TRUTHFUL\u201d", "Author": "c d", "ReviewID": "UR127152072", "Content": "This property is not properly maintained! The room that I stayed in did not have a smoke detector. It was wired in on the ceiling, but no device was there. Another guest told me lady they did not have a smoke detector. The elevator is dirty and looks more like a service elevator than one for guests. Our room smelled of smoke, eventhough we asked for non-smoking. The pool area at this property was not properly maintained. While I was there, a little paper sign stated the Spa was not working, but children and adults still used it. If the spa was off limits, they should have covered or roped it off to prevent people from using it. Sunday morning, the pool deck was littered with beer cans and trash. It was not cleaned up until about 10 am. There was no sign on or around the pool area for the hours of the pool and spa-at 7:30 am there were kids and adults in the pool. At that time the deep end was cloudy. I went to the front desk and asked them when the pool got cleaned. They said he would be there. Sometime after 10 am I noticed the pool had turned green and you could not see the bottom of the deep end. The pool guy finally got there and I spoke to the him. He said he could not correct the problem and I went back to front desk to discuss the pool and asked for a discount on my stay as I clearly would not have stayed there without a pool. They gave me $10 off, but with attitude! I still paid more for this hotel than one without a pool. The on-site manager told me it was inspected this morning and they would not be closing the pool as it was fine. I repeated back to her calmly, \u201cyou are telling me that the county came and inspected it today?...it is Sunday\u201d She said yes. That is not true! The management should have been truthful about such an important issue. Today I contacted the Swimming Pool Inspection department for Maricopa County. I knew the manager lied about a serious public health problem. The last date this pool was inspected by the county was September 2011. No inspection occured on Sunday, the County told me they don't work on the weekends. You do not lie to customers to make them happy, especially about a public safety issue. I also waited very long to get a print-out of my bill - over 10 minutes to print it out! Front desk seemed over-worked and stressed. It makes sense when the property is so run-down....they must have to deal with all sorts of problems and cranky customers. Property owner should take care of problems and make this a good hotel and train your employees how to deal with problems. customer service is key in the hotel business. BEWARE OF THIS HOTEL - MISSING SMOKE DETECTORS - DIRTY POOL - ETC", "Date": "April 2, 2012"}, {"Ratings": {"Service": "1", "Cleanliness": "1", "Overall": "1.0", "Value": "1", "Sleep Quality": "1", "Rooms": "1", "Location": "4"}, "AuthorLocation": "Tucson, Arizona", "Title": "\u201cBe afraid, be very afraid\u201d", "Author": "J J", "ReviewID": "UR127140446", "Content": "Have stayed at this location several times in the past during Phoenix Bike Week......NEVER AGAIN! Property had turned into a dump....broken dryers and washing machines piled in back side of property, rooms were NOT CLEAN.....knew the sheets in our room were previously slept on w/out being changed. Dirty carpet, no refrigerator, no microwave ......had to ask for a refrigerator to be delivered and was asked \"why, do you need one?\". Toilets not cleaned, no light in bathroom....had to call to have that replaced also. Electrical plugs did not work. Watched maid \"cleaning\" (I use the word lightly) rooms the day we checked out, never saw dirty sheets come out of rooms and the vaccum NEVER came off her cart. Two nights cost us $184.......when we checked out, we advised of conditions.....they didn't care and didn't want to hear it.........$184 for two night in HELL!", "Date": "April 2, 2012"}],
+	
+    "services": ["Room service", "24-hour front desk", "Currency exchange", "Luggage storage", "Concierge service", "Laundry", "Dry cleaning", "Ironing service", "Trouser press", "Meeting/banquet facilities", "Business centre", "Fax/photocopying", "Gift shop", "VIP room facilities"]
+}]
+}
