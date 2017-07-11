@@ -3,24 +3,49 @@ var connection = require('../data/dbconnection.js');
 module.exports.getAllHotels = function(req,res){
 
 	var db = connection.get();
-	console.log(db);
 	db.list({include_docs : true},function(err,body){
-    if(!err) {
-//        res
-//        	.status(200)
-//        	//.json(body.rows)
-//            .render('demo.html', {title : 'Demo'});
+
+       
+        if(!err) {
+             var result = [];
+            body.rows.forEach(function(docs){
+
+                result.push({ "_id" : docs.doc._id , "name" : docs.doc.name,
+                 "stars" : docs.doc.stars , "description ": docs.doc.description , "location" : docs.doc.location})
+                
+            });
         
-        var hotelList = [
-        'KFC',
-        'Wendy\'s',
-        'Chipotle'
-    ];
-    res.send(hotelList);
+        res
+            .status(200)
+            .json(result);
         
-    }
+        }
     else{
-    	console.log(err);
+        res
+            .status(500)
+            .json(err)
     }
 });
+}
+
+module.exports.getOneHotel = function(req, res){
+
+    var db = connection.get();
+    var docid = req.params.hotelid
+    db.get(docid , function(err,data){
+
+        if(!err){
+        res
+            .status(200)
+            .json(data)
+        }
+        else{
+
+            res
+                .status(500)
+                .json(err)
+        }
+
+    })
+
 }
