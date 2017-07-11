@@ -2,8 +2,8 @@ var connection = require('../data/dbconnection.js');
 
 module.exports.getAllHotels = function(req,res){
 
-	var db = connection.get();
-	db.list({include_docs : true},function(err,body){
+    var db = connection.get();
+    db.list({include_docs : true},function(err,body){
 
        
         if(!err) {
