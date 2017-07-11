@@ -12,9 +12,18 @@ module.exports.getAllHotels = function(req,res){
 //            .render('demo.html', {title : 'Demo'});
         
         var hotelList = [
-        'KFC',
-        'Wendy\'s',
-        'Chipotle'
+            'Buffalo Wild Wings',
+            'Dominos',
+            'Tandoor of India',    
+            'KFC',
+            'Wendy\'s',
+            'Chipotle',
+            'Raj Mahal',
+            'Pizza Hut',
+            'Papa John\'s',
+            'Red Lobster',
+            'Olive Garden',
+            'Shiv Sagar'
     ];
     res.send(hotelList);
         
