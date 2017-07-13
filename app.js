@@ -6,10 +6,12 @@ var express = require('express');
 var path = require('path');
 var start = express();
 var routes = require('./routes');
+var bodyParser = require('body-parser');
 
 
 start.use(express.static(path.join(__dirname,'public')));
 
+start.use(bodyParser.urlencoded({extended: false}))
 start.use('/',routes);
 
 

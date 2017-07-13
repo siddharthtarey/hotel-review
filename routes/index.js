@@ -11,4 +11,7 @@ routes
 	.route('/getOneHotel/:hotelid')
 	.get(routedata.getOneHotel)
 
+routes
+	.route('/addOneReview')
+	.post(routedata.addOneReview)
 module.exports = routes;

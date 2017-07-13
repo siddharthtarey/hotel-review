@@ -1,4 +1,6 @@
 var connection = require('../data/dbconnection.js');
+var random = require("random-js")();
+var dateFormat = require('dateformat');
 
 module.exports.getAllHotels = function(req,res){
 
@@ -11,7 +13,7 @@ module.exports.getAllHotels = function(req,res){
             body.rows.forEach(function(docs){
 
                 result.push({ "_id" : docs.doc._id , "name" : docs.doc.name,
-                 "stars" : docs.doc.stars , "description ": docs.doc.description , "location" : docs.doc.location})
+                 "stars" : docs.doc.stars , "location" : docs.doc.location})
                 
             });
         
@@ -47,5 +49,100 @@ module.exports.getOneHotel = function(req, res){
         }
 
     })
+
+}
+
+module.exports.addOneReview = function(req,res){
+     var db = connection.get();
+     
+     if(req.body && req.body.hotelid && req.body.revid && req.body.service && req.body.cleanliness
+        && req.body.overall && req.body.value && req.body.sleepQuality && req.body.rooms && req.body.location
+        && req.body.authorLocation && req.body.title && req.body.author && req.body.content){
+
+        var hotelid = req.body.hotelid;
+        var revid = req.body.revid;
+        var service = req.body.service;
+        var cleanliness = req.body.cleanliness;
+        var overall = req.body.overall;
+        var value = req.body.value;
+        var sleepQuality = req.body.sleepQuality;
+        var rooms = req.body.rooms;
+        var location = req.body.loation;
+
+        var authorLocation = req.body.authorLocation;
+        var title = req.body.title;
+        var author = req.body.author;
+        var content = req.body.content;
+        var reviewid =  random.integer(1,5432190);
+        var now  = new Date();
+        var date =  dateFormat(now,"longDate");
+
+        var data = {
+            "Ratings" : {
+
+                "Service" : service,
+                "Cleanliness" : cleanliness,
+                "Overall" : overall,
+                "Value" : value,
+                "Sleep Quality" : sleepQuality,
+                "Rooms" : rooms,
+                "Location" : location
+
+            },
+
+            "AuthorLocation" : authorLocation,
+            "Title" : title,
+            "Author" : author,
+            "ReviewID" : reviewid,
+            "Content" : content,
+            "Date" : date
+
+        }
+
+        db.get(hotelid, function(err,oldData){
+
+            if(err){
+
+                res
+                    .status(404)
+                    .json({"Error" : "hotel not found"})
+
+            }
+            else{
+                oldData.Reviews.push(data);
+                var newData = []
+                newData.push(oldData)
+                db.bulk({docs:newData}, function(err,body){
+
+                     if(err){
+
+                        res
+                            .status(500)
+                            .json({"Error" : err})
+                    }
+
+                    else{
+
+                        res
+                            .status(201)
+                            .json(newData)
+                    }
+
+                 });     
+                 
+                
+            }
+        })       
+            
+    }
+     
+     else{
+
+        res
+            .status(500)
+            .json({"Error" : "required fields missing"})
+     }
+     
+     
 
 }
