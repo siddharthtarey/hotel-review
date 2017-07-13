@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3",
+    "jquery-bar-rating": "^1.2.2",
     "nano": "^6.3.0",
     "nodemon": "^1.11.0"
   }

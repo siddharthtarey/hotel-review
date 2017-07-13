@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hotel-review">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
+      
+          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <style>
+      @font-face {
+        font-family: 'Glyphicons Halflings';
+        src:url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.eot');
+        src:url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+          url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.woff') format('woff'),
+          url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+          url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+      }
+    </style>
+      
+      <link rel="stylesheet" href="js/themes/fontawesome-stars-o.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+      
+
+      <script type='text/javascript'>
+        
+          var app = angular.module('hotel-review', []);
+          
+          app.controller('hotelreviewController', function($scope, $location, $http){
+              
+              $scope.hotelId = $location.search().id;
+              
+              $http.get('/getOneHotel/'+$scope.hotelId).success(function(response){
+                  $scope.reviews = response;
+                  
+                  setTimeout(function() {
+          $('#ratings').barrating({
+            theme: 'fontawesome-stars-o',
+              readonly: true,
+              initialRating: $scope.reviews.stars
+          });
+       },10);
+              });
+          });
+          
+      </script>
+      
+  </head>
+  <body id="mainbg" ng-controller="hotelreviewController">
+      
+    <div class="container">
+        <br/>
+        <center>
+    <h1> {{ reviews.name }} </h1>
+            <select id="ratings">
+                      <option value="1" >1</option>
+                      <option value="2" >2</option>
+                      <option value="3" >3</option>
+                      <option value="4" >4</option>
+                      <option value="5" >5</option>
+                    </select>
+            <br/>
+            <b>Address - </b>{{reviews.location.address}}
+            <br/><br/>
+            <p align="left"><b><h4 align="left">Description -</h4></b></p>
+            <p align="justify">{{reviews.description}}</p>
+            
+            <br/>
+            <p align="left"><b><h4 align="left">Rooms -</h4></b></p>
+            <div class="rooms">
+            
+                <table id="tblRooms" class="table table-striped table-hover">
+                
+                    <tr>
+                    
+                        <th>
+                            Type
+                        </th>
+                        <th>
+                            Total rooms
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                        <th>
+                            Price
+                        </th>
+                        
+                    </tr>
+                    <tr ng-repeat="room in reviews.rooms">
+                        
+                        <td>
+                            {{room.type}}
+                        </td>
+                        <td>
+                            {{room.number}}
+                        </td>
+                        <td>
+                            {{room.description}}
+                        </td>
+                        <td>
+                            {{room.price}}
+                        </td>
+                        
+                    </tr>
+                    
+                </table>
+            
+            </div>
+            
+            <br/>
+            <p align="left"><b><h4 align="left">Services provided -</h4></b></p>
+            <p align="left" ng-repeat="service in reviews.services">
+            <span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#50e3c2"></span>
+            &nbsp; &nbsp; {{service}}
+            </p>
+
+<!--      <input type="text" ng-model="search"  class="form-control" placeholder="Type to search..."/>       -->
+            <br/>
+            
+            <p align="left"><b><h4 align="left">Reviews - </h4></b></p>
+            
+            <div class="outer" ng-repeat="review in reviews.Reviews">
+            <div class="author-name">
+                
+                <h4><b>{{review.Title}}</b></h4>  Date - {{review.Date}}
+                
+                <br/>Review by - <b>{{review.Author}}</b> &nbsp;&nbsp; Location - {{review.AuthorLocation}} 
+                
+            </div>
+            <div class="left">
+                <ul>
+                <li><p class="authorrating" align="left"><b>Overall : {{review.Ratings.Overall}}</b></p></li>
+                <li><p class="authorrating" align="left">Service : {{review.Ratings.Service}}</p></li>
+                <li><p class="authorrating" align="left">Cleanliness : {{review.Ratings.Cleanliness}}</p></li>
+                <li><p class="authorrating" align="left">Value : {{review.Ratings.Value}}</p></li>
+                <li><p class="authorrating" align="left">Location : {{review.Ratings.Location}}</p></li>
+                <li><p class="authorrating" align="left">Rooms : {{review.Ratings.Rooms}}</p></li>
+                </ul>
+            </div>
+            <div class="right">
+            <p align="justify">"{{review.Content}}"</p>
+            </div>
+            </div>
+            
+            <style type="text/css">
+            
+                .outer{
+                    background-color: #f1f1f1;
+                    height:100%;
+                    width:100%;
+/*
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+*/
+                    margin-top: 10px;
+                    margin-bottom: 25px;
+                    Padding: 10px;
+                }
+                .author-name{
+                    background-color: #f9f9f9;
+                    text-align: left;
+                    min-height:40px;
+                    width:100%;
+/*
+                    border-color: blue;
+                    border-style: dashed;
+                    border-width: 1px;
+*/
+                    padding: 10px
+                }
+                .review-title{
+                    font-size: 18pt;
+                    margin: 0px;
+                }
+                .left{
+                    vertical-align: top;
+                    display: inline-block;
+                    min-height: 100px;
+                    width:49%;
+                    padding-top: 10px;
+/*
+                    border-color: green;
+                    border-style: dashed;
+                    border-width: 1px;
+*/
+                }
+                .right{
+                    
+                    vertical-align: top;
+                    display: inline-block;
+                    min-height: 100px;
+                    width:49%;
+                    padding-top: 10px;
+/*
+                    border-color: red;
+                    border-style: dashed;
+                    border-width: 1px;
+*/
+                }
+                .authorrating{
+                    margin: 0px;
+                }
+                
+            </style>
+            
+<!--
+    <div id="staticdiv"> 
+        
+            {{reviews}}
+            
+            </div>
+-->
+        
+            
+            
+        </center>
+      </div>
+      
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery.barrating.min.js"></script>
+    <script type="text/javascript">
+       
+    </script>
+  </body>
+</html>
