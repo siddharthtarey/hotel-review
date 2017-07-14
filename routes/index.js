@@ -1,3 +1,14 @@
+/**
+
+This file contains actions to be taken when a get or a post request is rceived from the browser
+
+@author : Siddharth Tarey
+@author : Swapnil Kamat
+@author : Deepak Shankar
+@author : Onkar Deorukhkar
+
+**/
+
 var express = require('express')
 var routes = express.Router();
 

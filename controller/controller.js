@@ -1,3 +1,12 @@
+/**
+This file contains the behavior of the application when a certain route is encountered
+
+@author : Siddharth Tarey
+@author : Swapnil Kamat
+@author : Deepak Shankar
+@author : Onkar Deorukhkar
+
+**/
 var connection = require('../data/dbconnection.js');
 var random = require("random-js")();
 var dateFormat = require('dateformat');
@@ -73,7 +82,7 @@ module.exports.addOneReview = function(req,res){
         var title = req.body.title;
         var author = req.body.author;
         var content = req.body.content;
-        var reviewid =  random.integer(1,5432190);
+        var reviewid =  random.integer(1,5432190).toString();
         var now  = new Date();
         var date =  dateFormat(now,"longDate");
 

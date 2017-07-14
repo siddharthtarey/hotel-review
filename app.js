@@ -1,5 +1,10 @@
 /**
- * Created by Swapnil on 4/11/2017.
+	This file starts the server and defines important middleware
+	
+  	@author : Siddharth Tarey
+	@author : Swapnil Kamat
+	@author : Deepak Shankar
+	@author : Onkar Deorukhkar
  */
  require('./data/dbconnection.js').open();
 var express = require('express');
