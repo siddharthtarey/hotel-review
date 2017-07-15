@@ -1,9 +1,53 @@
-#mainbg{
-	background: #ffffff;
+.container-fluid {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 160px;
 }
 
-.container-fluid {
-	padding-left: 160px;
-	padding-right: 160px;
-    padding-top: 160px;
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.eot');
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+.outer {
+    background-color: #f1f1f1;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    Padding: 10px;
+}
+
+.author-name {
+    background-color: #f9f9f9;
+    text-align: left;
+    min-height: 40px;
+    width: 100%;
+    padding: 10px
+}
+
+.review-title {
+    font-size: 18pt;
+    margin: 0px;
+}
+
+.left {
+    vertical-align: top;
+    display: inline-block;
+    min-height: 100px;
+    width: 49%;
+    padding-top: 10px;
+}
+
+.right {
+    vertical-align: top;
+    display: inline-block;
+    min-height: 100px;
+    width: 49%;
+    padding-top: 10px;
+}
+
+.authorrating {
+    margin: 0px;
 }

@@ -1,130 +1,123 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="hotel">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Hotel reviews</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/style.css">
-      
-          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <style>
-      @font-face {
-        font-family: 'Glyphicons Halflings';
-        src:url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.eot');
-        src:url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-          url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.woff') format('woff'),
-          url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-          url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
-      }
-    </style>
-      
-      <link rel="stylesheet" href="js/themes/fontawesome-stars-o.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-      
+    <link rel="stylesheet" href="css/style.css">
 
-      <script type='text/javascript'>
-        
-          var app = angular.module('hotel', []);
-          
-          app.controller('hotelController', function($scope, $http){
-              
-              $scope.getReviews = function(hotelId){
-                  window.location.href='/reviews.html#/?id=' + hotelId;
-              }
-              
-              $http.get('/gethotels').success(function(response){
-//                  console.log(response);
-                  var arr = [];
-                  for(var i=0; i< response.length; i++){
-//                      console.log(response[i]);
-                      arr.push(response[i]);
-                  }
-                  $scope.hotels = arr;
-              });
-          });
-          
-      </script>
-      
-  </head>
-  <body id="mainbg" ng-controller="hotelController">
-      
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="js/themes/fontawesome-stars-o.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+
+    <script type='text/javascript'>
+        var app = angular.module('hotel', []);
+
+        app.controller('hotelController', function($scope, $http) {
+
+            $scope.getReviews = function(hotelId) {
+                window.location.href = '/reviews.html#/?id=' + hotelId;
+            }
+
+            $http.get('/gethotels').success(function(response) {
+                //                  console.log(response);
+                var arr = [];
+                for (var i = 0; i < response.length; i++) {
+                    //                      console.log(response[i]);
+                    arr.push(response[i]);
+                }
+                $scope.hotels = arr;
+            });
+        });
+
+    </script>
+
+</head>
+
+<body id="mainbg" ng-controller="hotelController">
+
     <div class="container">
         <br/>
         <center>
-    <h1>Select a hotel to get reviews</h1>
+            <h1 style="color: #39c4b2">Hotel Reviews</h1>
             <br/>
 
-      <input type="text" ng-model="search"  class="form-control" placeholder="Type to search..."/>       
+            <input type="text" ng-model="search" class="form-control" placeholder="Type to search..." />
             <br/>
-            
-    <div id="staticdiv" > 
-      <table id="tblHotels" class="table table-striped table-hover">
-        
-          <tr>
-              <th>
-                  Name
-              </th>
-              <th>
-                  Rating
-              </th>
-              <th>
-                  Address
-              </th>
-              <th></th>
-          </tr>
-          
-          <tr ng-repeat=" hotel in hotels | filter:search ">
-              <td>
-                  {{ hotel.name }}
-              </td>
-              <td>
-<!--                    {{hotel.stars}}-->
-                    <select class="example">
+
+            <div id="staticdiv">
+                <table id="tblHotels" class="table table-striped table-hover">
+
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Rating
+                        </th>
+                        <th>
+                            Address
+                        </th>
+                        <th></th>
+                    </tr>
+
+                    <tr ng-repeat=" hotel in hotels | filter:search ">
+                        <td>
+                            {{ hotel.name }}
+                        </td>
+                        <td>
+                            <!--                    {{hotel.stars}}-->
+                            <select class="example">
                       <option value="1" ng-selected="{{hotel.stars == 1}}">1</option>
                       <option value="2" ng-selected="{{hotel.stars == 2}}" >2</option>
                       <option value="3" ng-selected="{{hotel.stars == 3}}">3</option>
                       <option value="4" ng-selected="{{hotel.stars == 4}}">4</option>
                       <option value="5" ng-selected="{{hotel.stars == 5}}" >5</option>
                     </select>
-<!--
+                            <!--
                   <select id="example" ng-init="hotel.stars">
                    <option ng-repeat="i in [1,2,3,4,5]" value="i">{{i}}</option>
                   </select>
 -->
-<!--                  {{ hotel.stars }}-->
-              </td>
-              <td>
-                  {{ hotel.location.address }}
-              </td>
-              <td>
-                <button type="button" class="btn btn-success" ng-click="getReviews(hotel._id)">Reviews</button>
-              </td>
-          </tr>
-          
-      </table>
-        </div>
-        
+                            <!--                  {{ hotel.stars }}-->
+                        </td>
+                        <td>
+                            {{ hotel.location.address }}
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-success" ng-click="getReviews(hotel._id)">Reviews</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
         </center>
-      </div>
-      
-      
+    </div>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/jquery.barrating.min.js"></script>
     <script type="text/javascript">
-       setInterval(function() {
-          $('#staticdiv .example').barrating({
-            theme: 'fontawesome-stars-o',
-              readonly: true
-          });
-       },5);
+        setInterval(function() {
+            $('#staticdiv .example').barrating({
+                theme: 'fontawesome-stars-o',
+                readonly: true
+            });
+        }, 5);
+
     </script>
-  </body>
+</body>
+
 </html>
