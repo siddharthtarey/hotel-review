@@ -1,3 +1,12 @@
+/**
+This file contains code for DB connection
+
+@author : Siddharth Tarey
+@author : Swapnil Kamat
+@author : Deepak Shankar
+@author : Onkar Deorukhkar
+
+**/
 var nano = require('nano')('http://localhost:5984');
 
 var dbconn = null;
