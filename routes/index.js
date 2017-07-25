@@ -29,4 +29,8 @@ routes
 	.route('/addOneReview')
 	.post(routedata.addOneReview)
 
+routes
+	.route('/deleteReview')
+	.get(routedata.deleteReview)
+
 module.exports = routes;

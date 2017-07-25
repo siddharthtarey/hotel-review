@@ -60,12 +60,11 @@ module.exports.getOneHotel = function (req, res) {
 // Add review to the hotel
 module.exports.addOneReview = function (req, res) {
     var db = connection.get();
-    if (req.body && req.body.hotelid && req.body.revid && req.body.service && req.body.cleanliness &&
+    if (req.body && req.body.hotelid  && req.body.service && req.body.cleanliness &&
         req.body.overall && req.body.value && req.body.sleepQuality && req.body.rooms && req.body.location &&
         req.body.authorLocation && req.body.title && req.body.author && req.body.content) {
 
         var hotelid = req.body.hotelid;
-        var revid = req.body.revid;
         var service = req.body.service;
         var cleanliness = req.body.cleanliness;
         var overall = req.body.overall;
@@ -135,4 +134,61 @@ module.exports.addOneReview = function (req, res) {
                 "Error": "required fields missing"
             })
     }
+}
+
+module.exports.deleteReview = function(req,res){
+     var db = connection.get();
+
+    if(req.query && req.query.hotelid && req.query.reviewid){
+        
+        db.get(req.query.hotelid,function(err,oldData){
+
+
+            if(err){
+
+                res
+                    .status(404)
+                    .json({"Error" : "Data not found"})
+            }
+            else{
+                
+                var reviewData = oldData.Reviews
+
+                var filteredData = reviewData.filter(function(items){
+                    return items.ReviewID !== req.query.reviewid
+                })
+
+                oldData.Reviews = filteredData
+                var newData = []
+                newData.push(oldData)
+                db.bulk({
+                    docs: newData
+                }, function (err, body) {
+                    if (err) {
+                        res
+                            .status(500)
+                            .json({
+                                "Error": err
+                            })
+                    } else {
+                        res
+                            .status(201)
+                            .json(newData)
+                    }
+                });
+            }
+
+        })
+
+        
+
+    }
+
+    else{
+
+        res
+            .status(500)
+            .json({"error" : "required field missing"})
+    }
+
 }
