@@ -95,3 +95,9 @@ a.submit-review {
     background: url("../img/review.png") no-repeat center 50%;
     background-size: 100px 100px;
 }
+
+.delete-icon {
+    height: 20px;
+    width: 20px;
+    float: right
+}

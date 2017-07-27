@@ -85,6 +85,8 @@ This page displays details and reviews of a hotel selected by the user in the in
             <p align="left"><b><h4 align="left">Reviews - </h4></b></p>
 
             <div class="outer" ng-repeat="review in reviews.Reviews">
+                <img class="delete-icon" src="img/delete.png" ng-click="deleteReview(reviews._id, review.ReviewID, review.Title)" />
+
                 <div class="author-name">
 
                     <h4><b>{{review.Title}}</b></h4> Date - {{review.Date}}
@@ -246,10 +248,19 @@ This page displays details and reviews of a hotel selected by the user in the in
 
         app.controller('hotelreviewController', function($scope, $location, $http) {
 
+            $scope.deleteReview = function(hotelId, reviewId, reviewTitle) {
+                var todelete = confirm("You are about to delete review - \n\n" + reviewTitle + "\n\nConfirm delete?\n\n");
+
+                if (todelete) {
+                    $http.get('/deleteReview?hotelid=' + hotelId + '&reviewid=' + reviewId).success(function(data, status, headers, config) {
+                        console.log(data[0].Reviews);
+                        $scope.reviews.Reviews = data[0].Reviews;
+                    });
+                }
+            }
+
             // Submit review
             $scope.scrollToBottom = function() {
-
-                
                 $scope.modalform.overall = document.querySelector('#ex6SliderVal').textContent;
                 $scope.modalform.service = document.querySelector('#ex6SliderVal2').textContent;
                 $scope.modalform.cleanliness = document.querySelector('#ex6SliderVal3').textContent;
@@ -266,13 +277,14 @@ This page displays details and reviews of a hotel selected by the user in the in
                 ).success(function(data, status, headers, config) {
                     console.log(data[0].Reviews);
                     $scope.reviews.Reviews = data[0].Reviews;
-                    
+
                 });
 
-                setTimeout(function(){$("html, body").animate({
-                    scrollTop: $(document).height()
-                }, 500);
-            }, 1000);
+                setTimeout(function() {
+                    $("html, body").animate({
+                        scrollTop: $(document).height()
+                    }, 500);
+                }, 1000);
             };
 
             // Obtain hotel id from the query string

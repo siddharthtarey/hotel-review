@@ -95,7 +95,7 @@ module.exports.addOneReview = function (req, res) {
                 "Location": location
             },
             "AuthorLocation": authorLocation,
-            "Title": title,
+            "Title": '"'+title+'"',
             "Author": author,
             "ReviewID": reviewid,
             "Content": content,
@@ -138,6 +138,7 @@ module.exports.addOneReview = function (req, res) {
             })
     }
 }
+
 
 module.exports.deleteReview = function(req,res){
      var db = connection.get();
