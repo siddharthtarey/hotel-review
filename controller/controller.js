@@ -13,6 +13,8 @@ var connection = require('../data/dbconnection.js');
 var random = require("random-js")();
 var dateFormat = require('dateformat');
 
+
+
 // fetch list of all the hotels
 module.exports.getAllHotels = function (req, res) {
     var db = connection.get();
@@ -64,6 +66,7 @@ module.exports.addOneReview = function (req, res) {
         req.body.overall && req.body.value && req.body.sleepQuality && req.body.rooms && req.body.location &&
         req.body.authorLocation && req.body.title && req.body.author && req.body.content) {
 
+        console.log("inside add review if loop");
         var hotelid = req.body.hotelid;
         var service = req.body.service;
         var cleanliness = req.body.cleanliness;
@@ -71,7 +74,7 @@ module.exports.addOneReview = function (req, res) {
         var value = req.body.value;
         var sleepQuality = req.body.sleepQuality;
         var rooms = req.body.rooms;
-        var location = req.body.loation;
+        var location = req.body.location;
 
         var authorLocation = req.body.authorLocation;
         var title = req.body.title;

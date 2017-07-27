@@ -9,6 +9,14 @@ This is the CSS for hotel review system.
 
 */
 
+#mainbg {
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .container-fluid {
     padding-left: 160px;
     padding-right: 160px;
@@ -61,4 +69,29 @@ This is the CSS for hotel review system.
 
 .authorrating {
     margin: 0px;
+}
+
+.gridelem {
+    width: 280px;
+    height: 20px;
+    display: inline-block;
+    float: left
+}
+
+#divservices {
+    width: 100%;
+    height: auto;
+    overflow: auto
+}
+
+a.submit-review {
+    width: 100px;
+    height: 100px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 80px;
+    bottom: 20px;
+    background: url("../img/review.png") no-repeat center 50%;
+    background-size: 100px 100px;
 }

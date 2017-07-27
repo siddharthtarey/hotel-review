@@ -19,19 +19,19 @@ This page displays details and reviews of a hotel selected by the user in the in
     <title>Hotel reviews</title>
 </head>
 
-<body ng-controller="hotelreviewController">
+<body id="mainbg" ng-controller="hotelreviewController">
 
     <div class="container">
         <br/>
         <center>
             <h1> {{ reviews.name }} </h1>
             <select id="ratings">
-                      <option value="1" >1</option>
-                      <option value="2" >2</option>
-                      <option value="3" >3</option>
-                      <option value="4" >4</option>
-                      <option value="5" >5</option>
-                    </select>
+              <option value="1" >1</option>
+              <option value="2" >2</option>
+              <option value="3" >3</option>
+              <option value="4" >4</option>
+              <option value="5" >5</option>
+            </select>
             <br/>
             <b>Address - </b>{{reviews.location.address}}
             <br/><br/>
@@ -74,10 +74,12 @@ This page displays details and reviews of a hotel selected by the user in the in
             </div>
 
             <br/>
-            <p align="left"><b><h4 align="left">Services provided -</h4></b></p>
-            <p align="left" ng-repeat="service in reviews.services">
-                <span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#50e3c2"></span> &nbsp; &nbsp; {{service}}
-            </p>
+            <div id="divservices">
+                <p align="left"><b><h4 align="left">Services provided -</h4></b></p>
+                <p class="gridelem" align="left" ng-repeat="service in reviews.services">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#50e3c2"></span> &nbsp; &nbsp; {{service}}
+                </p>
+            </div>
             <br/>
 
             <p align="left"><b><h4 align="left">Reviews - </h4></b></p>
@@ -105,6 +107,9 @@ This page displays details and reviews of a hotel selected by the user in the in
                             <p class="authorrating" align="left">Value : {{review.Ratings.Value}}</p>
                         </li>
                         <li>
+                            <p class="authorrating" align="left">SleepQuality : {{review.Ratings['Sleep Quality']}}</p>
+                        </li>
+                        <li>
                             <p class="authorrating" align="left">Location : {{review.Ratings.Location}}</p>
                         </li>
                         <li>
@@ -119,18 +124,156 @@ This page displays details and reviews of a hotel selected by the user in the in
         </center>
     </div>
 
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Submit review</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input id="txtTitle" type="text" class="form-control" placeholder="Title" ng-model="modalform.title">
+                        </div>
+                        <div class="form-group">
+                            <label for="Author">Author</label>
+                            <input id="txtAuthorname" type="text" class="form-control" placeholder="Author name" ng-model="modalform.author">
+                        </div>
+                        <div class="form-group">
+                            <label for="Location">Location</label>
+                            <input id="txtLocation" type="text" class="form-control" placeholder="Location" ng-model="modalform.authorLocation">
+                        </div>
+                        <div class="form-group">
+                            <label for="ratings">Ratings : </label>
+                            <br>
+                            <table>
+                                <tr>
+                                    <td style="width:130px">
+                                        <label for="overall">Overall</label>
+                                    </td>
+                                    <td>
+                                        <input id="ex6" type="text" data-slider-min="0.0" data-slider-max="5.0" data-slider-step="0.1" data-slider-value="3.0" />
+                                        <span id="ex6CurrentSliderValLabel"> <span id="ex6SliderVal">3.0</span>/5.0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:130px">
+                                        <label for="service">Service</label>
+                                    </td>
+                                    <td>
+                                        <input id="ex62" type="text" data-slider-min="0.0" data-slider-max="5.0" data-slider-step="0.1" data-slider-value="3.0" />
+                                        <span id="ex6CurrentSliderValLabel"> <span id="ex6SliderVal2">3.0</span>/5.0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:130px">
+                                        <label for="service">Cleanliness</label>
+                                    </td>
+                                    <td>
+                                        <input id="ex63" type="text" data-slider-min="0.0" data-slider-max="5.0" data-slider-step="0.1" data-slider-value="3.0" />
+                                        <span id="ex6CurrentSliderValLabel"> <span id="ex6SliderVal3">3.0</span>/5.0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:130px">
+                                        <label for="service">Value</label>
+                                    </td>
+                                    <td>
+                                        <input id="ex64" type="text" data-slider-min="0.0" data-slider-max="5.0" data-slider-step="0.1" data-slider-value="3.0" />
+                                        <span id="ex6CurrentSliderValLabel"> <span id="ex6SliderVal4">3.0</span>/5.0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:130px">
+                                        <label for="service">Sleep Quality</label>
+                                    </td>
+                                    <td>
+                                        <input id="ex65" type="text" data-slider-min="0.0" data-slider-max="5.0" data-slider-step="0.1" data-slider-value="3.0" />
+                                        <span id="ex6CurrentSliderValLabel"> <span id="ex6SliderVal5">3.0</span>/5.0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:130px">
+                                        <label for="service">Location</label>
+                                    </td>
+                                    <td>
+                                        <input id="ex66" type="text" data-slider-min="0.0" data-slider-max="5.0" data-slider-step="0.1" data-slider-value="3.0" />
+                                        <span id="ex6CurrentSliderValLabel"> <span id="ex6SliderVal6">3.0</span>/5.0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width:130px">
+                                        <label for="service">Rooms</label>
+                                    </td>
+                                    <td>
+                                        <input id="ex67" type="text" data-slider-min="0.0" data-slider-max="5.0" data-slider-step="0.1" data-slider-value="3.0" />
+                                        <span id="ex6CurrentSliderValLabel"> <span id="ex6SliderVal7">3.0</span>/5.0</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="form-group">
+                            <label for="content">Description</label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3" ng-model="modalform.content"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="scrollToBottom()">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="js/themes/fontawesome-stars-o.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/jquery.barrating.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.min.js"></script>
     <script type='text/javascript'>
         var app = angular.module('hotel-review', []);
 
         app.controller('hotelreviewController', function($scope, $location, $http) {
+
+            // Submit review
+            $scope.scrollToBottom = function() {
+
+                
+                $scope.modalform.overall = document.querySelector('#ex6SliderVal').textContent;
+                $scope.modalform.service = document.querySelector('#ex6SliderVal2').textContent;
+                $scope.modalform.cleanliness = document.querySelector('#ex6SliderVal3').textContent;
+                $scope.modalform.value = document.querySelector('#ex6SliderVal4').textContent;
+                $scope.modalform.sleepQuality = document.querySelector('#ex6SliderVal5').textContent;
+                $scope.modalform.rooms = document.querySelector('#ex6SliderVal7').textContent;
+                $scope.modalform.location = document.querySelector('#ex6SliderVal6').textContent;
+                $scope.modalform.hotelid = $scope.reviews._id;
+                $scope.modalform.revid = $scope.reviews._rev;
+
+                $http.post(
+                    '/addOneReview',
+                    $scope.modalform
+                ).success(function(data, status, headers, config) {
+                    console.log(data[0].Reviews);
+                    $scope.reviews.Reviews = data[0].Reviews;
+                    
+                });
+
+                setTimeout(function(){$("html, body").animate({
+                    scrollTop: $(document).height()
+                }, 500);
+            }, 1000);
+            };
 
             // Obtain hotel id from the query string
             $scope.hotelId = $location.search().id;
@@ -149,8 +292,45 @@ This page displays details and reviews of a hotel selected by the user in the in
                 }, 10);
             });
         });
+
+        // With JQuery
+        $("#ex6").slider();
+        $("#ex6").on("slide", function(slideEvt) {
+            $("#ex6SliderVal").text(slideEvt.value);
+        });
+
+        $("#ex62").slider();
+        $("#ex62").on("slide", function(slideEvt) {
+            $("#ex6SliderVal2").text(slideEvt.value);
+        });
+
+        $("#ex63").slider();
+        $("#ex63").on("slide", function(slideEvt) {
+            $("#ex6SliderVal3").text(slideEvt.value);
+        });
+
+        $("#ex64").slider();
+        $("#ex64").on("slide", function(slideEvt) {
+            $("#ex6SliderVal4").text(slideEvt.value);
+        });
+
+        $("#ex65").slider();
+        $("#ex65").on("slide", function(slideEvt) {
+            $("#ex6SliderVal5").text(slideEvt.value);
+        });
+
+        $("#ex66").slider();
+        $("#ex66").on("slide", function(slideEvt) {
+            $("#ex6SliderVal6").text(slideEvt.value);
+        });
+
+        $("#ex67").slider();
+        $("#ex67").on("slide", function(slideEvt) {
+            $("#ex6SliderVal7").text(slideEvt.value);
+        });
+
     </script>
-    
+    <a class="submit-review" data-toggle="modal" data-target="#myModal">Submit review</a>
 </body>
 
 </html>

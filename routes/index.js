@@ -11,8 +11,11 @@ This file contains actions to be taken when a get or a post request is rceived f
 
 var express = require('express')
 var routes = express.Router();
+var parser = require('body-parser');
 
 var routedata = require('../controller/controller.js');
+routes.use(parser.json());
+routes.use(parser.urlencoded({extended:true}));
 
 // route the request to getallhotels
 routes
