@@ -14,7 +14,6 @@ var random = require("random-js")();
 var dateFormat = require('dateformat');
 
 
-
 // fetch list of all the hotels
 module.exports.getAllHotels = function (req, res) {
     var db = connection.get();
