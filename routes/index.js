@@ -36,4 +36,8 @@ routes
 	.route('/deleteReview')
 	.get(routedata.deleteReview)
 
+routes
+	.route('/updateReview')
+	.post(routedata.updateReview)
+
 module.exports = routes;

@@ -15,29 +15,36 @@ var dateFormat = require('dateformat');
 
 
 // fetch list of all the hotels
-module.exports.getAllHotels = function (req, res) {
+
+
+module.exports.getAllHotels = function(req,res){
+
     var db = connection.get();
-    db.list({
-        include_docs: true
-    }, function (err, body) {
-        if (!err) {
-            var result = [];
-            body.rows.forEach(function (docs) {
-                result.push({
-                    "_id": docs.doc._id,
-                    "name": docs.doc.name,
-                    "stars": docs.doc.stars,
-                    "location": docs.doc.location
-                })
-            });
-            res
-                .status(200)
-                .json(result)
-        } else {
+
+    db.view('hotel-design','hotel-view',{'include_docs' : true},function(err,body){
+
+        if(err){
+
             res
                 .status(500)
                 .json(err)
         }
+
+        else{
+            var result = [];
+            body.rows.forEach(function (docs) {
+
+                result.push(docs.value)
+                
+             })   
+            
+            console.log(body)
+            res
+                .status(200)
+                .json(result)
+
+        }
+
     });
 }
 
@@ -65,7 +72,6 @@ module.exports.addOneReview = function (req, res) {
         req.body.overall && req.body.value && req.body.sleepQuality && req.body.rooms && req.body.location &&
         req.body.authorLocation && req.body.title && req.body.author && req.body.content) {
 
-        console.log("inside add review if loop");
         var hotelid = req.body.hotelid;
         var service = req.body.service;
         var cleanliness = req.body.cleanliness;
@@ -182,9 +188,6 @@ module.exports.deleteReview = function(req,res){
             }
 
         })
-
-        
-
     }
 
     else{
@@ -192,6 +195,86 @@ module.exports.deleteReview = function(req,res){
         res
             .status(500)
             .json({"error" : "required field missing"})
+    }
+
+}
+
+module.exports.updateReview = function(req,res){
+
+
+     var db = connection.get();
+    if (req.body && req.body.hotelid  && req.body.service && req.body.cleanliness &&
+        req.body.overall && req.body.value && req.body.sleepQuality && req.body.rooms && req.body.location &&
+        req.body.authorLocation && req.body.title && req.body.author && req.body.content && req.body.reviewid) {
+
+        
+        var now = new Date();
+        var date = dateFormat(now, "longDate");
+
+        db.get(req.body.hotelid,function(err, data){
+
+            if(err){
+
+                res
+                    .status(404)
+                    .json({"Error" : "Data not found"})
+            }
+
+            else{
+
+                var reviewData = data.Reviews
+
+                for(var i in reviewData){
+
+                    if(reviewData[i].ReviewID == req.body.reviewid){
+
+                        reviewData[i].Ratings.Service = req.body.service;
+                        reviewData[i].Ratings.Cleanliness = req.body.cleanliness;
+                        reviewData[i].Ratings.Overall = req.body.overall;
+                        reviewData[i].Ratings.Value = req.body.value;
+                        reviewData[i].Ratings["Sleep Quality"] = req.body.sleepQuality;
+                        reviewData[i].Ratings.Rooms = req.body.rooms;
+                        reviewData[i].Ratings.Location = req.body.location;
+                        reviewData[i].Author = req.body.author;
+                        reviewData[i].AuthorLocation = req.body.authorLocation;
+                        reviewData[i].Title = req.body.title;
+                        reviewData[i].Content = req.body.content;
+                        reviewData[i].Date = date;
+                        break;
+                    }
+                }
+
+                data.Reviews = reviewData;
+
+                var newData = []
+                newData.push(data)
+                db.bulk({
+                    docs: newData
+                }, function (err, body) {
+                    if (err) {
+                        res
+                            .status(500)
+                            .json({
+                                "Error": err
+                            })
+                    } else {
+                        res
+                            .status(201)
+                            .json(newData)
+                    }
+                });
+
+
+            }
+        })
+    }
+
+    else{
+
+        res
+            .status(500)
+            .json({"error" : "required field missing"})
+
     }
 
 }
